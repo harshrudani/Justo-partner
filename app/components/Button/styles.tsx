@@ -11,13 +11,9 @@ const styles = StyleSheet.create({
   mainContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginVertical: normalizeSpacing(20),
+    // marginVertical: normalizeSpacing(20),
   },
   btnTouch: {
-    backgroundColor: PRIMARY_THEME_COLOR,
-    height: normalizeHeight(50),
-    width: normalizeWidth(250),
-    borderRadius: 50,
     alignItems: 'center',
     justifyContent: 'center',
   },

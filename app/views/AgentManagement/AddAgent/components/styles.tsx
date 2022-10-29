@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   headerStyle: {
     backgroundColor: PRIMARY_THEME_COLOR,
   },
-  leftImageIconStyle: {
+  RightFirstIconStyle: {
     tintColor: WHITE_COLOR,
   },
   mainContainer: {
@@ -21,33 +21,44 @@ const styles = StyleSheet.create({
   },
   propertyListView: {
     flex: 1,
-    marginTop: normalizeSpacing(10),
+    margin: normalizeSpacing(2),
+  },
+  btnView: {
+    flex: 0.6,
+    top:5,
+    //margin: normalizeSpacing(3),
+    flexDirection:'row-reverse',
+    marginLeft:normalizeSpacing(22),
+    //backgroundColor:'red'
+  },
+  propertyListViewsec: {
+    flex: 5.4,
+    margin: normalizeSpacing(0),
   },
   IteamView: {
     backgroundColor: WHITE_COLOR,
-    padding: normalizeSpacing(10),
+    marginHorizontal: normalizeSpacing(10),
     borderRadius: 10,
     marginVertical: normalizeSpacing(10),
   },
   Txtview : {
     flexDirection: 'row',
-    // justifyContent: 'center',
     alignItems: 'center',
     borderBottomColor: GRAY_COLOR,
     borderBottomWidth: 1,
-    paddingVertical: normalizeSpacing(10),
+    padding: normalizeSpacing(4),
+    marginTop: normalizeSpacing(2),
   },
   projectContainer : {
-    flex: 2,
+    flex: 2.5,
     alignItems: 'flex-end',
-    height: '100%'
   },
   projectTxt : {
     fontSize: normalize(15),
     fontFamily: FONT_FAMILY_SEMIBOLD,
   },
   nameContainer : {
-    flex: 4,
+    flex: 3.5,
     alignItems: 'flex-start',
   },
   nameTxt : {
@@ -60,55 +71,46 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginVertical: normalizeSpacing(10),
-    marginHorizontal: normalizeSpacing(10),
+  },
+  buttonbox : {
+    top: 12,
+    backgroundColor: WHITE_COLOR,
+    width: normalizeWidth(100),
+    height: normalizeHeight(30),
+    marginLeft: normalizeSpacing(8),
+    justifyContent: 'center',
+    borderWidth: 0.5,
+    borderRadius: 7,
+    
   },
   button : {
+    top: 5,
     backgroundColor: WHITE_COLOR,
-    width: normalizeWidth(90),
-    height: normalizeHeight(25),
-    alignItems: 'center',
+    width: normalizeWidth(150),
+    height: normalizeHeight(35),
+    marginLeft: normalizeSpacing(5),
     justifyContent: 'center',
-    borderWidth: 0.5
+    //borderWidth: 0.5,
+    borderRadius: 7,
+    
+    
   },
-  buttonTxt : {
-    textAlign: 'center'
-  },
-  ImageSliderContainer: {
-    flexDirection: 'row',
-    marginVertical: normalizeSpacing(5),
-  },
-  imageSlider: {
-    width: normalizeWidth(60),
-    height: normalizeHeight(60),
-    borderRadius: 10,
-    marginRight: 10
-  },
-  shadowView: {
-    width: normalizeWidth(40),
-    height: normalizeHeight(60),
-    position: 'absolute',
-    right: normalizeSpacing(-15),
-    backgroundColor: WHITE_COLOR,
-    borderRadius: 10,
-    opacity: 0.6,
-    justifyContent: 'center',
-    alignItems: 'flex-end',
-    shadowColor: WHITE_COLOR,
-    shadowOffset: {width: 0, height: 5},
-    shadowOpacity: 0.2,
-    shadowRadius: 10,
-    elevation: 15,
+  Viewbutton : {
+    top: 10,
+    backgroundColor: PRIMARY_THEME_COLOR,
+    borderBottomEndRadius: 10,
+    borderTopLeftRadius: 10,
+    padding: normalizeSpacing(5)
   },
   arrow : {
+    tintColor: WHITE_COLOR,
     width: normalizeWidth(30),
-    height: normalizeHeight(30),
+    height: normalizeHeight(30)
   },
-  btnContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginHorizontal: normalizeSpacing(10),
-    marginVertical: normalizeSpacing(5)
-  }
+  buttonTxt : {
+    color: WHITE_COLOR,
+    textAlign: 'center'
+  },
 });
 
 export default styles;

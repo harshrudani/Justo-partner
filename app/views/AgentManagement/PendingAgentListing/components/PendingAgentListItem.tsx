@@ -5,12 +5,12 @@ import strings from '../../../../components/utilities/Localization';
 import { BLACK_COLOR, YELLOW_COLOR } from '../../../../components/utilities/constant';
 import images from '../../../../assets/images';
 
-const PropertyListItem = (props: any) => {
+const PendingAgentListing = (props: any) => {
   return (
     <View style={styles.IteamView}>
       <View style={styles.Txtview} >
         <View style={styles.projectContainer}>
-          <Text style={styles.projectTxt}>Project Name :</Text>
+          <Text style={styles.projectTxt}>Agent Name :</Text>
         </View>
         <View style={styles.nameContainer}>
           <Text style={styles.nameTxt}>{props.items.Projectname}</Text>
@@ -26,7 +26,15 @@ const PropertyListItem = (props: any) => {
       </View>
       <View style={styles.Txtview} >
         <View style={styles.projectContainer}>
-          <Text style={styles.projectTxt}>Visitor :</Text>
+          <Text style={styles.projectTxt}>RERA No. :</Text>
+        </View>
+        <View style={styles.nameContainer}>
+        <Text style={styles.nameTxt}>{props.items.rerano}</Text>
+        </View>
+      </View>
+      <View style={styles.Txtview} >
+        <View style={styles.projectContainer}>
+          <Text style={styles.projectTxt}>No. of Visit :</Text>
         </View>
         <View style={styles.nameContainer}>
         <Text style={styles.nameTxt}>{props.items.visitor}</Text>
@@ -34,7 +42,7 @@ const PropertyListItem = (props: any) => {
       </View>
       <View style={styles.Txtview}>
         <View style={styles.projectContainer}>
-          <Text style={styles.projectTxt}>Site Visit :</Text>
+          <Text style={styles.projectTxt}>No. of Site Visit :</Text>
         </View>
         <View style={styles.nameContainer}>
         <Text style={styles.nameTxt}>{props.items.siteVisit}</Text>
@@ -42,7 +50,7 @@ const PropertyListItem = (props: any) => {
       </View>
       <View style={styles.Txtview} >
         <View style={styles.projectContainer}>
-          <Text style={styles.projectTxt}>Colse Visit :</Text>
+          <Text style={styles.projectTxt}>No. of Colse Visit :</Text>
         </View>
         <View style={styles.nameContainer}>
         <Text style={styles.nameTxt}>{props.items.closeVisit}</Text>
@@ -54,36 +62,34 @@ const PropertyListItem = (props: any) => {
         </View>
         <View style={styles.nameContainer}>
         <Text style={[styles.nameTxt,{
-          color: props.items.status == 'confirmatin Pending' ? BLACK_COLOR : 
-          props.items.status == 'Subscribe' ? YELLOW_COLOR : 'red'
+          color:  BLACK_COLOR
         }]}>{props.items.status}</Text>
         </View>
       </View>
-      <View style={[styles.Txtview,{borderBottomWidth: 0}]} >
-        <View style={styles.projectContainer}>
-          <Text style={styles.projectTxt}>Create Date :</Text>
-        </View>
-        <View style={styles.nameContainer}>
-        <Text style={styles.nameTxt}>{props.items.createddate}</Text>
-        </View>
-      </View>
+    
       <View style={styles.buttonContainer}>
-        <TouchableOpacity
-        onPress={() => props.items.status === 'Subscribe' ? props.setIsVisible(true) : null}
-         style={[styles.button, {
-          borderColor: props.items.status == 'confirmatin Pending' ? BLACK_COLOR : 
-          props.items.status == 'Subscribe' ? 'red' : YELLOW_COLOR
+         <TouchableOpacity
+        onPress={() => null}
+         style={[styles.buttonbox, {
+          borderColor: BLACK_COLOR
         }]} >
           <Text style={[styles.buttonTxt,{
-          color: props.items.status == 'confirmatin Pending' ? BLACK_COLOR : 
-          props.items.status == 'Subscribe' ? 'red' : YELLOW_COLOR
-          }]}>{
-            props.items.status == 'confirmatin Pending' ? strings.active : 
-            props.items.status == 'Subscribe' ? strings.unsubscribe : strings.subscribe 
-          
-          }</Text>
+          color: BLACK_COLOR
+          }]}>{ strings.active}</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.Viewbutton} onPress={() => props.onPressView(props.items)} >
+
+        {/*<TouchableOpacity
+        onPress={() => null}
+         style={[styles.buttonbox, {
+          borderColor: BLACK_COLOR
+        }]} >
+          <Text style={[styles.buttonTxt,{
+          color: BLACK_COLOR
+          }]}>{props.items.status === 'Deactive' ? strings.active :  strings.deactive}</Text>
+        </TouchableOpacity> */}
+
+
+        <TouchableOpacity style={styles.Viewbutton} onPress={props.onPressView} >
         <Image 
             source={images.forwardArrow}
             style={styles.arrow}
@@ -94,4 +100,4 @@ const PropertyListItem = (props: any) => {
   );
 };
 
-export default PropertyListItem;
+export default PendingAgentListing;

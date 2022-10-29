@@ -2,6 +2,7 @@ import {StyleSheet} from 'react-native';
 import {normalize, normalizeHeight, normalizeSpacing, normalizeWidth} from '../../../../components/scaleFontSize';
 import {
   BLACK_COLOR,
+  FONT_FAMILY_EXTRABOLD,
   FONT_FAMILY_SEMIBOLD,
   GRAY_COLOR,
   PRIMARY_THEME_COLOR,
@@ -21,11 +22,13 @@ const styles = StyleSheet.create({
   wrap: {
     flex: 1,
     margin: normalizeSpacing(20),
+    alignItems: 'center'
   },
   headingText: {
     fontSize: normalize(18),
     fontFamily: FONT_FAMILY_SEMIBOLD,
     color: PRIMARY_THEME_COLOR,
+    textAlign: 'center'
   },
   underlineStyle: {
     width: normalizeWidth(60),
@@ -33,9 +36,65 @@ const styles = StyleSheet.create({
     backgroundColor: GRAY_COLOR,
     marginTop: normalizeSpacing(5),
   },
+  imageCircle: {
+    backgroundColor: GRAY_COLOR,
+    marginVertical: normalizeSpacing(10),
+    borderRadius: normalizeSpacing(100),
+    height: normalizeHeight(120),
+    width: normalizeWidth(120),
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
   inputWrap: {
     marginTop: normalizeSpacing(30),
   },
+  genderView: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    marginVertical: normalizeSpacing(10),
+    width: '100%'
+  },
+  genderTxt: {
+    fontSize: normalize(18),
+    fontWeight: 'bold',
+    color: BLACK_COLOR,
+  },
+  radioView: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: normalizeSpacing(10)
+  },
+  radioTxt : {
+    fontSize: normalize(18),
+  },
+  workingView : {
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginVertical: normalizeSpacing(10)
+  },
+  addBtn: {
+    backgroundColor: PRIMARY_THEME_COLOR,
+    width: normalizeWidth(140),
+    height: normalizeHeight(25),
+    borderRadius: 100,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  addTxt: {
+    color: WHITE_COLOR,
+    textTransform: 'uppercase',
+    fontSize: normalize(13),
+    fontFamily: FONT_FAMILY_EXTRABOLD
+  },
+  workTxt: {
+    color: BLACK_COLOR,
+    textTransform: 'uppercase',
+    fontSize: normalize(13),
+    fontFamily: FONT_FAMILY_EXTRABOLD
+  }
 });
 
 export default styles;
