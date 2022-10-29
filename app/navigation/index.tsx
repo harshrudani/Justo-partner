@@ -14,6 +14,7 @@ import LoginScreen from '../views/Authentication/LoginScreen';
 import RegistrationScreen from '../views/Authentication/RegistrationScreen';
 import OnboardingScreen from '../views/Authentication/OnboardingScreen';
 import SplashScreen from '../views/Authentication/SplashScreen';
+import OtpVerificationScreen from '../views/Authentication/OtpVerification';
 import ImageContent from '../views/PropertyMangement/PropertyDetails/components/ImageContent';
 import VideoContent from '../views/PropertyMangement/PropertyDetails/components/VideoContent';
 import CatalogueContent from '../views/PropertyMangement/PropertyDetails/components/CatalogueContent';
@@ -52,6 +53,12 @@ const Route = () => {
           component={RegistrationScreen}
           name="RegistrationScreenView"
         /> */}
+        <Stack.Screen
+          component={OtpVerificationScreen}
+          name="OtpVerificationScreenView"
+        />
+        {/* <Stack.Screen component={DrawerComponent} name="DashboardScreenView" />
+        <Stack.Screen component={PropertyDetails} name="PropertyDetails" /> */}
         <Stack.Screen component={DrawerComponent} name="DashboardScreenView" />
         <Stack.Screen component={PropertyDetails} name="PropertyDetails" />
         <Stack.Screen component={ImageContent} name="ImageContent" />
