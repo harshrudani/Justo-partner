@@ -65,7 +65,6 @@ const Route = () => {
         <Stack.Screen component={VideoContent} name="VideoContent" />
         <Stack.Screen component={CatalogueContent} name="CatalogueContent" />
         {/* <Stack.Screen component={DrawerComponent} name="DashboardScreenView" /> */}
-        <Stack.Screen component={PropertyDetails} name="PropertyDetails" />
         <Stack.Screen name="PendingAgentList" component={PendingAgentListScreen}  />
         <Stack.Screen name="AgentDetails" component={AgentDetails}  />
       </Stack.Navigator>
