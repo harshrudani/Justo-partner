@@ -35,7 +35,7 @@ local.properties
 node_modules/
 npm-debug.log
 yarn-error.log
-yarn.lock
+
 # BUCK
 buck-out/
 \.buckd/
@@ -56,8 +56,9 @@ buck-out/
 # Bundle artifact
 *.jsbundle
 
-# CocoaPods
+# Ruby / CocoaPods
 /ios/Pods/
-/Justo-partner/ios/Podfile.lock
-ios/JustoPartner.xcworkspace/xcuserdata/dr.mac.xcuserdatad/UserInterfaceState.xcuserstate
-ios/JustoPartner.xcworkspace/xcuserdata/dr.mac.xcuserdatad/UserInterfaceState.xcuserstate
+
+#zip
+*.zip
+/vendor/bundle/
