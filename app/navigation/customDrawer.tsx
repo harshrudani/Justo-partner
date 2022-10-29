@@ -98,6 +98,9 @@ const customDrawer = ({navigation}: any) => {
         <DrawerTabSection
           iconSource={images.agency}
           tabTitle={strings.agencyHeader}
+          handleDrawerNavigation={() => {
+            navigation.navigate('AgentListing');
+          }}
         />
         <DrawerTabSection
           iconSource={images.lead}
