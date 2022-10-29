@@ -22,7 +22,7 @@ const images = {
   rightArrow: require('./rightArrow.png'),
   link: require('./link.png'),
   filter: require('./filter.png'),
-  loginBanner: require('./loginBanner.jpeg'),
+  loginBanner: require('./loginBanner.png'),
   backArrow: require('./backArrow.png'),
   forwardArrow: require('./forwardArrow.png'),
   close: require('./close.png'),

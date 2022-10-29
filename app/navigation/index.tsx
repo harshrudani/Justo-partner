@@ -11,6 +11,7 @@ import LoginScreen from '../views/Authentication/LoginScreen';
 import RegistrationScreen from '../views/Authentication/RegistrationScreen';
 import OnboardingScreen from '../views/Authentication/OnboardingScreen';
 import SplashScreen from '../views/Authentication/SplashScreen';
+import OtpVerificationScreen from '../views/Authentication/OtpVerification';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -32,7 +33,7 @@ const Route = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={screenOptions}>
-        <Stack.Screen component={SplashScreen} name="SplashScreenView" />
+        {/* <Stack.Screen component={SplashScreen} name="SplashScreenView" />
         <Stack.Screen
           component={OnboardingScreen}
           name="OnboardingScreenView"
@@ -41,9 +42,13 @@ const Route = () => {
         <Stack.Screen
           component={RegistrationScreen}
           name="RegistrationScreenView"
+        /> */}
+        <Stack.Screen
+          component={OtpVerificationScreen}
+          name="OtpVerificationScreenView"
         />
-        <Stack.Screen component={DrawerComponent} name="DashboardScreenView" />
-        <Stack.Screen component={PropertyDetails} name="PropertyDetails" />
+        {/* <Stack.Screen component={DrawerComponent} name="DashboardScreenView" />
+        <Stack.Screen component={PropertyDetails} name="PropertyDetails" /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

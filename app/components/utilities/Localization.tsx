@@ -37,7 +37,13 @@ const strings = new LocalizedStrings({
     ConfirmationModalTxt: 'Select the reason for\r\nunsubscribe this property.',
     Confirm: 'CONFIRM',
     searchProperty: 'Search Property',
-    apply: 'APPLY'
+    apply: 'APPLY',
+    resend: 'Resend',
+    notRecived: `Didn't receive the code?`,
+    codeSent: 'A verification code has been sent to',
+    your: ' your',
+    email: 'email address',
+    otpVerification: 'OTP VERIFICATION'
   },
 });
 
