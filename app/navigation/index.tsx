@@ -43,14 +43,11 @@ const Route = () => {
       <Stack.Navigator screenOptions={screenOptions}>
         <Stack.Screen component={SplashScreen} name="SplashScreenView" />
         <Stack.Screen component={DrawerComponent} name="DashboardScreenView" />
-        <Stack.Screen component={SplashScreen} name="SplashScreenView" />
         <Stack.Screen component={OnboardingScreen} name="OnboardingScreenView" />
         <Stack.Screen component={LoginScreen} name="LoginScreenView" />
         <Stack.Screen component={RegistrationScreen} name="RegistrationScreenView" />
         <Stack.Screen component={OtpVerificationScreen} name="OtpVerificationScreenView" />
-        {/* <Stack.Screen component={DrawerComponent} name="DashboardScreenView" />
-        <Stack.Screen component={PropertyDetails} name="PropertyDetails" /> */}
-        <Stack.Screen component={DrawerComponent} name="DashboardScreenView" />
+      
         <Stack.Screen component={PropertyDetails} name="PropertyDetails" />
         <Stack.Screen component={ImageContent} name="ImageContent" />
         <Stack.Screen component={VideoContent} name="VideoContent" />
