@@ -3,7 +3,7 @@ import React from 'react'
 import styles from './style';
 import images from '../../../assets/images';
 import Header from '../../../components/Header';
-import strings from '../../../Localization';
+import strings from '../../../components/utilities/Localization';
 
 const NotificationView = (props: any) => {
   return (

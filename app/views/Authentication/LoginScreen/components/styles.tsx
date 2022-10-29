@@ -4,11 +4,11 @@ import {
   normalizeHeight,
   normalizeSpacing,
   normalizeWidth,
-} from '../../../components/scaleFontSize';
+} from '../../../../components/scaleFontSize';
 import {
   FONT_FAMILY_SEMIBOLD,
   PRIMARY_THEME_COLOR,
-} from '../../../components/utilities/constant';
+} from '../../../../components/utilities/constant';
 const {width, height} = Dimensions.get('window');
 
 const styles = StyleSheet.create({
