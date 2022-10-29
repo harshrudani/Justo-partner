@@ -9,7 +9,7 @@ const strings = new LocalizedStrings({
     registrationHeader: 'Registration',
     propertyHeader: 'Property',
     propertyManagementHeader: 'Property Management',
-    agencyHeader: 'Agency (CP)',
+    agencyHeader: 'Agent',
     leadManagementHeader: 'Lead Management',
     appointmentWithCPHeader: 'Appointment With CP',
     appointmentForVisitHeader: 'Appointment For Site Visit',
@@ -46,6 +46,12 @@ const strings = new LocalizedStrings({
     male: "Male",
     female: "Female",
     next: 'next',
+    addnewagent: 'Add new Agent',
+    pendingconfirm: 'Pending Confirm',
+    edit: 'Edit',
+    deactive: 'Deactive',
+    agentdetail: 'Agent Detail',
+    
   },
 });
 
