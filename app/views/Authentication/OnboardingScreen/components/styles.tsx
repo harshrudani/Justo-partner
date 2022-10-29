@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 import {
   normalizeHeight,
   normalizeWidth,
-} from '../../../components/scaleFontSize';
+} from '../../../../components/scaleFontSize';
 
 const styles = StyleSheet.create({
   imageStyle: {

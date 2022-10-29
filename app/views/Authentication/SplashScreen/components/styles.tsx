@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
-import {normalize} from '../../../components/scaleFontSize';
-import { FONT_FAMILY_EXTRABOLD } from '../../../components/utilities/constant';
+import {normalize} from '../../../../components/scaleFontSize';
+import { FONT_FAMILY_EXTRABOLD } from '../../../../components/utilities/constant';
 
 const styles = StyleSheet.create({
   splashContainer: {

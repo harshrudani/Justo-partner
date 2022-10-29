@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {validateEmail} from '../../components/utilities/constant';
+import {validateEmail} from '../../../components/utilities/constant';
 import LoginView from './components/LoginView';
 
 const LoginScreen = ({navigation}: any) => {

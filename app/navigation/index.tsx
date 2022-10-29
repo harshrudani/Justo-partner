@@ -2,15 +2,15 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import SplashScreen from '../views/SplashScreen';
-import OnboardingScreen from '../views/OnboardingScreen';
-import LoginScreen from '../views/LoginScreen';
 import DashboardScreen from '../views/DashboardScreen';
 import NotificationScreen from '../views/NotificationsScreen';
 import customDrawer from './customDrawer';
-import RegistrationScreen from '../views/RegistrationScreen';
 import PropertyScreen from '../views/PropertyMangement/PropertyScreen';
 import PropertyDetails from '../views/PropertyMangement/PropertyDetails';
+import LoginScreen from '../views/Authentication/LoginScreen';
+import RegistrationScreen from '../views/Authentication/RegistrationScreen';
+import OnboardingScreen from '../views/Authentication/OnboardingScreen';
+import SplashScreen from '../views/Authentication/SplashScreen';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -32,7 +32,7 @@ const Route = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={screenOptions}>
-        {/* <Stack.Screen component={SplashScreen} name="SplashScreenView" />
+        <Stack.Screen component={SplashScreen} name="SplashScreenView" />
         <Stack.Screen
           component={OnboardingScreen}
           name="OnboardingScreenView"
@@ -41,7 +41,7 @@ const Route = () => {
         <Stack.Screen
           component={RegistrationScreen}
           name="RegistrationScreenView"
-        /> */}
+        />
         <Stack.Screen component={DrawerComponent} name="DashboardScreenView" />
         <Stack.Screen component={PropertyDetails} name="PropertyDetails" />
       </Stack.Navigator>
