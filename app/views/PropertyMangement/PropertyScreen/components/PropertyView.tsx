@@ -1,20 +1,19 @@
 import {View, Text, StatusBar, FlatList} from 'react-native';
 import React, { useState } from 'react';
-import Header from '../../../components/Header';
-import images from '../../../assets/images';
-import strings from '../../../Localization';
 import styles from './styles';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {PRIMARY_THEME_COLOR_DARK} from '../../../components/utilities/constant';
 import PropertyListItem from './PropertyListItem';
 import { useNavigation } from '@react-navigation/native';
-import ConfirmModal from '../../../components/Modals/ConfirmModal';
-import FilterModal from '../../../components/Modals/FilterModal';
+import Header from '../../../../components/Header';
+import images from '../../../../assets/images';
+import strings from '../../../../components/utilities/Localization';
+import ConfirmModal from '../../../../components/Modals/ConfirmModal';
+import { PRIMARY_THEME_COLOR_DARK } from '../../../../components/utilities/constant';
 
 const PropertyView = (props: any) => {
   const [isVisible, setIsVisible] = useState(false)
   const insets = useSafeAreaInsets();
-const navigation = useNavigation()
+const navigation: any = useNavigation()
   const DATA: any = [
     {
       Projectname: 'ABC',
@@ -56,7 +55,6 @@ const navigation = useNavigation()
 
   const onPressView = () => {
     navigation.navigate('PropertyDetails')
-    console.log("🚀 ~ onPressView")
   }
 
   return (

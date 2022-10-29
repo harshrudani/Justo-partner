@@ -13,7 +13,7 @@ import React, {useState} from 'react';
 import Header from '../../../components/Header';
 import images from '../../../assets/images';
 import styles from './styles';
-import strings from '../../../Localization';
+import strings from '../../../components/utilities/Localization';
 import {
   PRIMARY_THEME_COLOR,
   PRIMARY_THEME_COLOR_DARK,
@@ -56,7 +56,6 @@ const DashboardView = (props: any) => {
     },
   ];
   const renderItem = ({item}: any) => {
-    console.log('item', item);
     return (
       <TouchableOpacity style={styles.headingView}>
         <Text style={styles.itemText}>{item.cpName}</Text>

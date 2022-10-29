@@ -1,8 +1,8 @@
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import React from "react";
 import styles from "./styles";
-import { GRAY_COLOR } from "../../../components/utilities/constant";
-import { normalizeSpacing } from "../../../components/scaleFontSize";
+import { GRAY_COLOR } from "../../../../components/utilities/constant";
+import { normalizeSpacing } from "../../../../components/scaleFontSize";
 
 const PropertyDetailItem = (props: any) => {
   return (
@@ -60,7 +60,7 @@ const PropertyDetailItem = (props: any) => {
           <Text style={styles.projectTxt}>Property Type :</Text>
         </View>
         <View style={styles.nameContainer}>
-          <Text style={styles.nameTxt}>{props.items.Projectname}</Text>
+          <Text style={styles.nameTxt}>{props.items.propertyType}</Text>
         </View>
       </View>
       <View style={styles.Txtview}>
@@ -68,7 +68,7 @@ const PropertyDetailItem = (props: any) => {
           <Text style={styles.projectTxt}>Start Date :</Text>
         </View>
         <View style={styles.nameContainer}>
-          <Text style={styles.nameTxt}>{props.items.Projectname}</Text>
+          <Text style={styles.nameTxt}>{props.items.startDate}</Text>
         </View>
       </View>
       <View style={styles.Txtview}>
@@ -76,7 +76,7 @@ const PropertyDetailItem = (props: any) => {
           <Text style={styles.projectTxt}>End Date :</Text>
         </View>
         <View style={styles.nameContainer}>
-          <Text style={styles.nameTxt}>{props.items.Projectname}</Text>
+          <Text style={styles.nameTxt}>{props.items.EndDate}</Text>
         </View>
       </View>
       <View style={styles.Txtview}>
@@ -84,7 +84,7 @@ const PropertyDetailItem = (props: any) => {
           <Text style={styles.projectTxt}>Lead Assign to :</Text>
         </View>
         <View style={styles.nameContainer}>
-          <Text style={styles.nameTxt}>{props.items.Projectname}</Text>
+          <Text style={styles.nameTxt}>{props.items.lead}</Text>
         </View>
       </View>
       <View style={styles.Txtview}>
@@ -103,7 +103,7 @@ const PropertyDetailItem = (props: any) => {
               },
             ]}
           >
-            {props.items.Projectname}
+            {props.items.configuration}
           </Text>
           <Text
             style={[
@@ -115,8 +115,8 @@ const PropertyDetailItem = (props: any) => {
                 marginVertical: normalizeSpacing(5)
               },
             ]}
-          >{props.items.Projectname}</Text>
-          <Text style={styles.nameTxt}>{props.items.Projectname}</Text>
+          >{props.items.configuration}</Text>
+          <Text style={styles.nameTxt}>{props.items.configuration}</Text>
         </View>
       </View>
       <View style={styles.Txtview}>
@@ -135,7 +135,7 @@ const PropertyDetailItem = (props: any) => {
               },
             ]}
           >
-            {props.items.Projectname}
+            {props.items.amenity}
           </Text>
           <Text
             style={[
@@ -147,8 +147,8 @@ const PropertyDetailItem = (props: any) => {
                 marginVertical: normalizeSpacing(5)
               },
             ]}
-          >{props.items.Projectname}</Text>
-          <Text style={styles.nameTxt}>{props.items.Projectname}</Text>
+          >{props.items.amenity}</Text>
+          <Text style={styles.nameTxt}>{props.items.amenity}</Text>
         </View>
       </View>
       <View style={styles.Txtview}>
@@ -156,7 +156,10 @@ const PropertyDetailItem = (props: any) => {
           <Text style={styles.projectTxt}>Content :</Text>
         </View>
         <View style={styles.nameContainer}>
-          <Text style={styles.nameTxt}>{props.items.Projectname}</Text>
+          <Text style={styles.nameTxt}>Images</Text>
+          <View>
+            <Image></Image>
+          </View>
         </View>
       </View>
       <View style={[styles.Txtview,{borderBottomWidth: 0}]}>
@@ -164,7 +167,7 @@ const PropertyDetailItem = (props: any) => {
           <Text style={styles.projectTxt}>Pickup Allowed :</Text>
         </View>
         <View style={styles.nameContainer}>
-          <Text style={styles.nameTxt}>{props.items.Projectname}</Text>
+          <Text style={styles.nameTxt}>{props.items.pickup}</Text>
         </View>
       </View>
     </View>

@@ -9,7 +9,7 @@ import {
 import React from 'react';
 import styles from './styles';
 import images from '../assets/images';
-import strings from '../Localization';
+import strings from '../components/utilities/Localization';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 import {
