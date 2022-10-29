@@ -83,7 +83,7 @@ const PropertyListItem = (props: any) => {
           
           }</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.Viewbutton} onPress={props.onPressView} >
+        <TouchableOpacity style={styles.Viewbutton} onPress={() => props.onPressView(props.items)} >
         <Image 
             source={images.forwardArrow}
             style={styles.arrow}

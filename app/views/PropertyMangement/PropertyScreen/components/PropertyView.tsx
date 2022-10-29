@@ -9,9 +9,11 @@ import images from '../../../../assets/images';
 import strings from '../../../../components/utilities/Localization';
 import ConfirmModal from '../../../../components/Modals/ConfirmModal';
 import { PRIMARY_THEME_COLOR_DARK } from '../../../../components/utilities/constant';
+import FilterModal from '../../../../components/Modals/FilterModal';
 
 const PropertyView = (props: any) => {
   const [isVisible, setIsVisible] = useState(false)
+  const [FilterisVisible, setFilterisVisible] = useState(false)
   const insets = useSafeAreaInsets();
 const navigation: any = useNavigation()
   const DATA: any = [
@@ -53,8 +55,9 @@ const navigation: any = useNavigation()
     },
   ];
 
-  const onPressView = () => {
-    navigation.navigate('PropertyDetails')
+  const onPressView = (items: any) => {
+    console.log("🚀 ~ items", items)
+    navigation.navigate('PropertyDetails', items)
   }
 
   return (
@@ -74,16 +77,18 @@ const navigation: any = useNavigation()
         handleOnLeftIconPress={props.handleDrawerPress}
         headerStyle={styles.headerStyle}
         RightFirstIconStyle={styles.RightFirstIconStyle}
+        handleOnRightFirstIconPress={() => setFilterisVisible(true)}
       />
       <View style={styles.propertyListView}>
         <FlatList 
           data={DATA}
+          showsVerticalScrollIndicator={false}
           renderItem={({item}) => <PropertyListItem items={item} setIsVisible={setIsVisible} onPressView={onPressView} />}
         />
       </View>
       <ConfirmModal Visible={isVisible} setIsVisible={setIsVisible} />
-      {/* <FilterModal /> */}
-    </View>
+      <FilterModal Visible={FilterisVisible} setIsVisible={setFilterisVisible} />
+    </View> 
   );
 };
 

@@ -37,7 +37,15 @@ const strings = new LocalizedStrings({
     ConfirmationModalTxt: 'Select the reason for\r\nunsubscribe this property.',
     Confirm: 'CONFIRM',
     searchProperty: 'Search Property',
-    apply: 'APPLY'
+    apply: 'APPLY',
+    imagecontentHeader: 'Images',
+    videocontentHeader: 'Videos',
+    cataloguecontentHeader: 'Catalogue',
+    createVisit: 'CREATE VISIT',
+    gender: "Gender :",
+    male: "Male",
+    female: "Female",
+    next: 'next',
   },
 });
 

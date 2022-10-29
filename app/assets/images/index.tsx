@@ -27,6 +27,7 @@ const images = {
   forwardArrow: require('./forwardArrow.png'),
   close: require('./close.png'),
   downErrow: require('./downErrow.png'),
+  buildings: require('./buildings.jpeg'),
 };
 
 export default images;
