@@ -2,7 +2,7 @@ import {StatusBar, Text, View} from 'react-native';
 import React, {useState} from 'react';
 import {RadioButton} from 'react-native-paper';
 import Header from '../../../components/Header';
-import strings from '../../../Localization';
+import strings from '../../../components/utilities/Localization';
 import styles from './styles';
 import {PRIMARY_THEME_COLOR, WHITE_COLOR} from '../../../components/utilities/constant';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';

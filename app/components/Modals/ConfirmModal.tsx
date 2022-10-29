@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Modal from "react-native-modal";
 import styles from './styles';
 import images from '../../assets/images';
-import strings from '../../Localization';
+import strings from '../utilities/Localization';
 import { Dropdown } from 'react-native-element-dropdown';
 import Button from '../Button';
 const data = [

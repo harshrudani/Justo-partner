@@ -4,7 +4,7 @@ import Header from '../../../../components/Header'
 import { PRIMARY_THEME_COLOR_DARK } from '../../../../components/utilities/constant'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import images from '../../../../assets/images'
-import strings from '../../../../Localization'
+import strings from '../../../../components/utilities/Localization'
 import styles from './styles'
 import PropertyDetailItem from './PropertyDetailItem'
 

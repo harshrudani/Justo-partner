@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import strings from '../../../Localization';
+import strings from '../../../components/utilities/Localization';
 import styles from './styles';
 
 const SplashScreenVeiw = () => {

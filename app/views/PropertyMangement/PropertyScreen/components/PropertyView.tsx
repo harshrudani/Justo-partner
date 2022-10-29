@@ -6,7 +6,7 @@ import PropertyListItem from './PropertyListItem';
 import { useNavigation } from '@react-navigation/native';
 import Header from '../../../../components/Header';
 import images from '../../../../assets/images';
-import strings from '../../../../Localization';
+import strings from '../../../../components/utilities/Localization';
 import ConfirmModal from '../../../../components/Modals/ConfirmModal';
 import { PRIMARY_THEME_COLOR_DARK } from '../../../../components/utilities/constant';
 
