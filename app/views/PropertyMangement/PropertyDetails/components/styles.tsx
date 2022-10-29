@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
   projectContainer : {
     flex: 2,
     alignItems: 'flex-end',
+    height: '100%'
   },
   projectTxt : {
     fontSize: normalize(15),
@@ -70,8 +71,43 @@ const styles = StyleSheet.create({
     borderWidth: 0.5
   },
   buttonTxt : {
-    // color: WHITE_COLOR,
     textAlign: 'center'
+  },
+  ImageSliderContainer: {
+    flexDirection: 'row',
+    marginVertical: normalizeSpacing(5),
+  },
+  imageSlider: {
+    width: normalizeWidth(60),
+    height: normalizeHeight(60),
+    borderRadius: 10,
+    marginRight: 10
+  },
+  shadowView: {
+    width: normalizeWidth(40),
+    height: normalizeHeight(60),
+    position: 'absolute',
+    right: normalizeSpacing(-15),
+    backgroundColor: WHITE_COLOR,
+    borderRadius: 10,
+    opacity: 0.6,
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+    shadowColor: WHITE_COLOR,
+    shadowOffset: {width: 0, height: 5},
+    shadowOpacity: 0.2,
+    shadowRadius: 10,
+    elevation: 15,
+  },
+  arrow : {
+    width: normalizeWidth(30),
+    height: normalizeHeight(30),
+  },
+  btnContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginHorizontal: normalizeSpacing(10),
+    marginVertical: normalizeSpacing(5)
   }
 });
 

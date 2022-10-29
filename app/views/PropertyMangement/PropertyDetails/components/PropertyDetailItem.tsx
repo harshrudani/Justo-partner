@@ -1,12 +1,13 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, ScrollView, TouchableOpacity } from "react-native";
 import React from "react";
 import styles from "./styles";
 import { GRAY_COLOR } from "../../../../components/utilities/constant";
 import { normalizeSpacing } from "../../../../components/scaleFontSize";
+import images from "../../../../assets/images";
 
 const PropertyDetailItem = (props: any) => {
   return (
-    <View>
+    <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.Txtview}>
         <View style={styles.projectContainer}>
           <Text style={styles.projectTxt}>Status :</Text>
@@ -99,7 +100,6 @@ const PropertyDetailItem = (props: any) => {
                 borderBottomColor: GRAY_COLOR,
                 borderBottomWidth: 1,
                 width: '100%',
-                marginVertical: normalizeSpacing(5)
               },
             ]}
           >
@@ -131,7 +131,6 @@ const PropertyDetailItem = (props: any) => {
                 borderBottomColor: GRAY_COLOR,
                 borderBottomWidth: 1,
                 width: '100%',
-                marginVertical: normalizeSpacing(5)
               },
             ]}
           >
@@ -157,9 +156,68 @@ const PropertyDetailItem = (props: any) => {
         </View>
         <View style={styles.nameContainer}>
           <Text style={styles.nameTxt}>Images</Text>
-          <View>
-            <Image></Image>
-          </View>
+          <View style={styles.ImageSliderContainer}>
+            <Image
+              source={images.buildings}
+              style={styles.imageSlider}
+             />
+            <Image
+              source={images.buildings}
+              style={styles.imageSlider}
+             />
+            <Image
+              source={images.buildings}
+              style={styles.imageSlider}
+             />
+             <TouchableOpacity style={styles.shadowView} onPress={() => props.onpresContent('ImageContent')}>
+                <Image
+                source={images.forwardArrow}
+                style={styles.arrow}
+                 />
+             </TouchableOpacity>
+        </View>
+          <Text style={styles.nameTxt}>Videos</Text>
+          <View style={styles.ImageSliderContainer}>
+            <Image
+              source={images.buildings}
+              style={styles.imageSlider}
+             />
+            <Image
+              source={images.buildings}
+              style={styles.imageSlider}
+             />
+            <Image
+              source={images.buildings}
+              style={styles.imageSlider}
+             />
+             <TouchableOpacity style={styles.shadowView} onPress={() => props.onpresContent('VideoContent')}>
+                <Image
+                source={images.forwardArrow}
+                style={styles.arrow}
+                 />
+             </TouchableOpacity>
+        </View>
+          <Text style={styles.nameTxt}>Catalogue</Text>
+          <View style={styles.ImageSliderContainer}>
+            <Image
+              source={images.buildings}
+              style={styles.imageSlider}
+             />
+            <Image
+              source={images.buildings}
+              style={styles.imageSlider}
+             />
+            <Image
+              source={images.buildings}
+              style={styles.imageSlider}
+             />
+             <TouchableOpacity style={styles.shadowView} onPress={() => props.onpresContent('CatalogueContent')}>
+                <Image
+                source={images.forwardArrow}
+                style={styles.arrow}
+                 />
+             </TouchableOpacity>
+        </View>
         </View>
       </View>
       <View style={[styles.Txtview,{borderBottomWidth: 0}]}>
@@ -170,7 +228,7 @@ const PropertyDetailItem = (props: any) => {
           <Text style={styles.nameTxt}>{props.items.pickup}</Text>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
