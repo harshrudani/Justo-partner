@@ -7,6 +7,8 @@ const strings = new LocalizedStrings({
     notificationHeader: 'Notification',
     dashboardHeader: 'Dashboard',
     registrationHeader: 'Registration',
+    companyDetails: 'Company Information',
+    registernow: 'register now',
     propertyHeader: 'Property',
     propertyManagementHeader: 'Property Management',
     agencyHeader: 'Agent',
@@ -57,7 +59,8 @@ const strings = new LocalizedStrings({
     edit: 'Edit',
     deactive: 'Deactive',
     agentdetail: 'Agent Detail',
-    
+    userbankinfo: 'User Bank Info',
+    createnewagency: 'Create New Agency'
   },
 });
 

@@ -22,6 +22,11 @@ const styles = StyleSheet.create({
     color: WHITE_COLOR,
     fontFamily: FONT_FAMILY_SEMIBOLD
   },
+  rightImageView: {
+    position: 'absolute',
+    right: 0,
+    marginRight: normalizeSpacing(15)
+  }
 });
 
 export default styles;

@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
         shadowColor: BLACK_COLOR,
         shadowOpacity: 0.2,
         shadowRadius: 6,
-        elevation: 10,
+        elevation: 1,
         color: PRIMARY_THEME_COLOR,
         fontSize: normalize(20),
       },
