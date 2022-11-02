@@ -13,13 +13,20 @@ const LoginView = (props: any) => {
   };
   return (
     <View style={styles.mainContainer}>
-      <View style={styles.logoView}>
+      {/* <View style={styles.logoView}>
         <View style={styles.loginBannerView}>
           <Image style={styles.loginBanner} source={images.loginBanner} />
         </View>
         <View style={styles.bannerLogoView}>
           <Image style={styles.logoImage} source={images.logoWhiteBG} />
         </View>
+      </View> */}
+      <View style={styles.logoView}>
+        <Image
+          style={styles.loginBanner}
+          source={images.loginBanner}
+          resizeMode="contain"
+        />
       </View>
       <View style={styles.inputView}>
         <View style={styles.inputWrap}>

@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Image } from "react-native";
 import React from "react";
 import styles from "./styles";
 import { normalize, normalizeHeight, normalizeWidth } from "../scaleFontSize";
@@ -18,7 +18,8 @@ const Button = (props: any) => {
     borderWidth = 0,
     btnTxtcolor = WHITE_COLOR,
     btnTxtsize = 20,
-    textTransform = 'capitalize'
+    textTransform = "capitalize",
+    rightImage
   } = props;
   return (
     <View style={styles.mainContainer}>
@@ -32,20 +33,28 @@ const Button = (props: any) => {
             borderRadius: border,
             borderColor: bordercolor,
             borderWidth: borderWidth,
+            flexDirection: "row",
+            alignItems: "center",
+            marginHorizontal: 10,
           },
         ]}
         onPress={props.handleBtnPress}
       >
-        <Text
-          style={{
-            fontSize: normalize(btnTxtsize),
-            color: btnTxtcolor,
-            fontFamily: FONT_FAMILY_SEMIBOLD,
-            textTransform: textTransform
-          }}
-        >
-          {props.buttonText}
-        </Text>
+        <View>
+          <Text
+            style={{
+              fontSize: normalize(btnTxtsize),
+              color: btnTxtcolor,
+              fontFamily: FONT_FAMILY_SEMIBOLD,
+              textTransform: textTransform,
+            }}
+          >
+            {props.buttonText}
+          </Text>
+        </View>
+        <View style={styles.rightImageView}>
+          <Image style={{ tintColor: "#fff", width: 40, height: 40 }} source={rightImage} />
+        </View>
       </TouchableOpacity>
     </View>
   );
