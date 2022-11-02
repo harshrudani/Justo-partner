@@ -47,7 +47,8 @@ const styles = StyleSheet.create({
     width: normalizeWidth(200),
   },
   inputView: {
-    flex: 3,
+    flex: 5,
+    justifyContent: 'flex-end'
   },
   inputWrap: {
     marginVertical: normalizeSpacing(10),
@@ -64,7 +65,7 @@ const styles = StyleSheet.create({
     fontFamily: FONT_FAMILY_SEMIBOLD,
   },
   bottomView: {
-    flex: 2,
+    flex: 1,
     alignContent: 'flex-end',
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -107,6 +108,9 @@ const styles = StyleSheet.create({
     color: PRIMARY_THEME_COLOR,
     fontFamily: FONT_FAMILY_SEMIBOLD,
   },
+  btnView: {
+    marginVertical: 20
+  }
 });
 
 export default styles;
