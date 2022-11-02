@@ -1,10 +1,11 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity, Image } from "react-native";
 import React from "react";
 import styles from "./Styles";
 import {
   BLACK_COLOR,
   YELLOW_COLOR,
 } from "../../../../components/utilities/constant";
+import images from "../../../../assets/images";
 
 const LeadManagementItem = (props: any) => {
   console.log("🚀 ~ props", props);
@@ -71,8 +72,8 @@ const LeadManagementItem = (props: any) => {
                   props.items.status == "confirmatin Pending"
                     ? BLACK_COLOR
                     : props.items.status == "Subscribe"
-                    ? YELLOW_COLOR
-                    : "red",
+                      ? YELLOW_COLOR
+                      : "red",
               },
             ]}
           >
@@ -80,29 +81,22 @@ const LeadManagementItem = (props: any) => {
           </Text>
         </View>
       </View>
-      {/* <View style={styles.buttonContainer}>
+      <View style={styles.buttonContainer}>
         <TouchableOpacity
-        onPress={() => props.items.status === 'Subscribe' ? props.setIsVisible(true) : null}
-         style={[styles.button, {
-          borderColor: props.items.status == 'confirmatin Pending' ? BLACK_COLOR : 
-          props.items.status == 'Subscribe' ? 'red' : YELLOW_COLOR
-        }]} >
-          <Text style={[styles.buttonTxt,{
-          color: props.items.status == 'confirmatin Pending' ? BLACK_COLOR : 
-          props.items.status == 'Subscribe' ? 'red' : YELLOW_COLOR
-          }]}>{
-            props.items.status == 'confirmatin Pending' ? strings.active : 
-            props.items.status == 'Subscribe' ? strings.unsubscribe : strings.subscribe 
-          
-          }</Text>
+          style={styles.button} >
+          <Text style={styles.buttonTxt}>Edit</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.Viewbutton} onPress={() => props.onPressView(props.items)} >
-        <Image 
+        <TouchableOpacity
+          style={styles.button} >
+          <Text style={styles.buttonTxt}>Call</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.Viewbutton} >
+          <Image
             source={images.forwardArrow}
             style={styles.arrow}
           />
         </TouchableOpacity>
-      </View> */}
+      </View>
     </View>
   );
 };

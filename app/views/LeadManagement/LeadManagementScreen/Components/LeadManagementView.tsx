@@ -12,43 +12,43 @@ import Header from "../../../../components/Header";
 import Button from "../../../../components/Button";
 import LeadManagementItem from "./LeadManagementItem";
 const DATA: any = [
-    {
-      Projectname: 'ABC',
-      Location: 'Indore',
-      visitor: 123,
-      siteVisit: 234,
-      closeVisit: 600,
-      status: 'confirmatin Pending',
-      createddate: '11/10/2022'
-    },
-    {
-      Projectname: 'ABC',
-      Location: 'Indore',
-      visitor: 123,
-      siteVisit: 234,
-      closeVisit: 600,
-      status: 'Subscribe',
-      createddate: '11/10/2022'
-    },
-    {
-      Projectname: 'ABC',
-      Location: 'Indore',
-      visitor: 123,
-      siteVisit: 234,
-      closeVisit: 600,
-      status: 'Unsubscribe',
-      createddate: '11/10/2022'
-    },
-    {
-      Projectname: 'ABC',
-      Location: 'Indore',
-      visitor: 123,
-      siteVisit: 234,
-      closeVisit: 600,
-      status: 'confirmatin Pending',
-      createddate: '11/10/2022'
-    },
-  ];
+  {
+    Projectname: 'ABC',
+    Location: 'Indore',
+    visitor: 123,
+    siteVisit: 234,
+    closeVisit: 600,
+    status: 'confirmatin Pending',
+    createddate: '11/10/2022'
+  },
+  {
+    Projectname: 'ABC',
+    Location: 'Indore',
+    visitor: 123,
+    siteVisit: 234,
+    closeVisit: 600,
+    status: 'Subscribe',
+    createddate: '11/10/2022'
+  },
+  {
+    Projectname: 'ABC',
+    Location: 'Indore',
+    visitor: 123,
+    siteVisit: 234,
+    closeVisit: 600,
+    status: 'Unsubscribe',
+    createddate: '11/10/2022'
+  },
+  {
+    Projectname: 'ABC',
+    Location: 'Indore',
+    visitor: 123,
+    siteVisit: 234,
+    closeVisit: 600,
+    status: 'confirmatin Pending',
+    createddate: '11/10/2022'
+  },
+];
 
 const LeadManagementView = (props: any) => {
   const insets = useSafeAreaInsets();
@@ -69,7 +69,7 @@ const LeadManagementView = (props: any) => {
         handleOnLeftIconPress={props.handleDrawerPress}
         headerStyle={styles.headerStyle}
         RightFirstIconStyle={styles.RightFirstIconStyle}
-        //   handleOnRightFirstIconPress={() => setFilterisVisible(true)}
+      //   handleOnRightFirstIconPress={() => setFilterisVisible(true)}
       />
       <View style={styles.TopBtnView}>
         <Button
@@ -77,12 +77,14 @@ const LeadManagementView = (props: any) => {
           width={150}
           height={30}
           btnTxtsize={15}
+          handleBtnPress={props.handleBulkUploadPress}
         />
         <Button
           buttonText={"Add New Visitor"}
           width={150}
           height={30}
           btnTxtsize={15}
+          handleBtnPress={props.handleAddNewPress}
         />
       </View>
       <View style={styles.propertyListView}>

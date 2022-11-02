@@ -22,6 +22,8 @@ import CompanyDetails from '../views/Authentication/RegistrationScreen/component
 import UserBankInfo from '../views/Authentication/RegistrationScreen/components/UserBankInfo';
 import ForgotPassword from '../views/Authentication/ForgotPassword';
 import LeadManagementScreen from '../views/LeadManagement/LeadManagementScreen';
+import BulkUpload from '../views/LeadManagement/LeadManagementScreen/Components/BulkUpload';
+import AddNewVisitorScreen from '../views/LeadManagement/AddNewVisitor';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -78,6 +80,9 @@ const Route = () => {
         <Stack.Screen component={CatalogueContent} name="CatalogueContent" />
         <Stack.Screen name="PendingAgentList" component={PendingAgentListScreen}  />
         <Stack.Screen name="AgentDetails" component={AgentDetails}  />
+        {/* Lead Management Screens */}
+        <Stack.Screen name="BulkUpload" component={BulkUpload}  />
+        <Stack.Screen name="AddNewVisitorScreen" component={AddNewVisitorScreen}  />
       </Stack.Navigator>
     </NavigationContainer>
   );

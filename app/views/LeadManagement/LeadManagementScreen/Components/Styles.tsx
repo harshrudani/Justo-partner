@@ -89,9 +89,25 @@ const styles = StyleSheet.create({
     height: normalizeHeight(30)
   },
   buttonTxt : {
-    color: WHITE_COLOR,
+    color: BLACK_COLOR,
     textAlign: 'center'
   },
+  BulkMainView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  uploadView: {
+    backgroundColor: GRAY_COLOR,
+    width: '90%',
+    height: normalizeHeight(100),
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  uploadTxt: {
+    color: BLACK_COLOR,
+    fontSize: normalize(18),
+  }
 });
 
 export default styles;
