@@ -105,6 +105,9 @@ const customDrawer = ({navigation}: any) => {
         <DrawerTabSection
           iconSource={images.lead}
           tabTitle={strings.leadManagementHeader}
+          handleDrawerNavigation={() => {
+            navigation.navigate('LeadManagement');
+          }}
         />
         <DrawerTabSection
           iconSource={images.event}

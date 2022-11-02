@@ -64,6 +64,15 @@ const strings = new LocalizedStrings({
     createnewagency: 'Create New Agency',
     sendotp: 'Send Otp',
     forgotPasswordHeader: 'Forgot Password',
+    visitor: 'Visitor',
+    bulkupload: 'Bulk Upload',
+    uploadCSV: 'Upload CSV',
+    uploadimage: 'Upload Image',
+    addnewvisitor: 'Add New Visitor',
+    visitordetails: 'Visitor Details',
+    propertyrequire: 'Property Require',
+    createVisitor: 'Create Visitor',
+    createandschedule: 'Create & schedule',
   },
 });
 

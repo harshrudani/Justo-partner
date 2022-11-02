@@ -21,6 +21,9 @@ import CatalogueContent from '../views/PropertyMangement/PropertyDetails/compone
 import CompanyDetails from '../views/Authentication/RegistrationScreen/components/CompanyDetails';
 import UserBankInfo from '../views/Authentication/RegistrationScreen/components/UserBankInfo';
 import ForgotPassword from '../views/Authentication/ForgotPassword';
+import LeadManagementScreen from '../views/LeadManagement/LeadManagementScreen';
+import BulkUpload from '../views/LeadManagement/LeadManagementScreen/Components/BulkUpload';
+import AddNewVisitorScreen from '../views/LeadManagement/AddNewVisitor';
 import ChangePasswordScreen from '../views/Authentication/ChangePassword';
 
 const Stack = createNativeStackNavigator();
@@ -34,10 +37,10 @@ const DrawerComponent = () => {
       drawerContent={props => customDrawer(props)}>
       <Drawer.Screen name="DashboardScreen" component={DashboardScreen} />
       <Drawer.Screen name="Notifications" component={NotificationScreen} />
-      <Drawer.Screen name="PropertyScreenView" component={PropertyScreen} />
-      <Drawer.Screen name="AgentListing" component={AgentListingScreen} />
-      <Stack.Screen component={LoginScreen} name="LoginScreenView" />
-
+      <Drawer.Screen  name="PropertyScreenView" component={PropertyScreen} />
+      <Drawer.Screen name="AgentListing" component={AgentListingScreen}  />
+      <Drawer.Screen name="LeadManagement" component={LeadManagementScreen}  />
+      
       {/* <Stack.Screen component={PropertyScreen} name="PropertyScreenView" /> */}
     </Drawer.Navigator>
   );
@@ -77,6 +80,9 @@ const Route = () => {
         <Stack.Screen component={CatalogueContent} name="CatalogueContent" />
         <Stack.Screen name="PendingAgentList" component={PendingAgentListScreen}  />
         <Stack.Screen name="AgentDetails" component={AgentDetails}  />
+        {/* Lead Management Screens */}
+        <Stack.Screen name="BulkUpload" component={BulkUpload}  />
+        <Stack.Screen name="AddNewVisitorScreen" component={AddNewVisitorScreen}  />
       </Stack.Navigator>
     </NavigationContainer>
   );
