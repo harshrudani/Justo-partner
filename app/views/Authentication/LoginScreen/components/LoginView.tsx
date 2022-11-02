@@ -1,10 +1,10 @@
-import {View, Text, Image, TouchableOpacity} from 'react-native';
-import React, {useState} from 'react';
-import styles from './styles';
-import images from '../../../../assets/images';
-import InputField from '../../../../components/InputField';
-import Button from '../../../../components/Button';
-import strings from '../../../../components/utilities/Localization';
+import { View, Text, Image, TouchableOpacity } from "react-native";
+import React, { useState } from "react";
+import styles from "./styles";
+import images from "../../../../assets/images";
+import InputField from "../../../../components/InputField";
+import Button from "../../../../components/Button";
+import strings from "../../../../components/utilities/Localization";
 
 const LoginView = (props: any) => {
   const [isVisiblePassword, setIsVisiblePassword] = useState(true);
@@ -31,7 +31,7 @@ const LoginView = (props: any) => {
       <View style={styles.inputView}>
         <View style={styles.inputWrap}>
           <InputField
-            placeholderText={'Email Address'}
+            placeholderText={"Email Address"}
             rightImgSrc={props.validEmail ? images.check : images.emailIcon}
             isSecureText={false}
             onChangeText={props.handleEmailChange}
@@ -39,7 +39,7 @@ const LoginView = (props: any) => {
         </View>
         <View style={styles.inputWrap}>
           <InputField
-            placeholderText={'Password'}
+            placeholderText={"Password"}
             rightImgSrc={
               isVisiblePassword ? images.showPassword : images.hiddenPassword
             }
@@ -51,10 +51,12 @@ const LoginView = (props: any) => {
         <TouchableOpacity style={styles.forgotTouch}>
           <Text style={styles.forgotText}>{strings.forgotPassword}</Text>
         </TouchableOpacity>
-        <Button
-          buttonText={strings.signInText}
-          handleBtnPress={props.handleLoginPress}
-        />
+        <View style={styles.btnView}>
+          <Button
+            buttonText={strings.signInText}
+            handleBtnPress={props.handleLoginPress}
+          />
+        </View>
         {/* <View style={styles.dontHaveView}>
           <Text style={styles.dontText}>{strings.dontHaveAnAcc}</Text>
           <TouchableOpacity style={styles.registerTouch}>
@@ -65,7 +67,8 @@ const LoginView = (props: any) => {
           <Text style={styles.dontText}>{strings.newUserText}</Text>
           <TouchableOpacity
             style={styles.registerTouch}
-            onPress={props.handleSingupPress}>
+            onPress={props.handleSingupPress}
+          >
             <Text style={styles.registerText}>{strings.signUp}</Text>
           </TouchableOpacity>
         </View>
