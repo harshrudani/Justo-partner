@@ -60,7 +60,9 @@ const strings = new LocalizedStrings({
     deactive: 'Deactive',
     agentdetail: 'Agent Detail',
     userbankinfo: 'User Bank Info',
-    createnewagency: 'Create New Agency'
+    createnewagency: 'Create New Agency',
+    sendotp: 'Send Otp',
+    forgotPasswordHeader: 'Forgot Password',
   },
 });
 

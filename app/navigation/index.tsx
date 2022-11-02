@@ -20,6 +20,7 @@ import VideoContent from '../views/PropertyMangement/PropertyDetails/components/
 import CatalogueContent from '../views/PropertyMangement/PropertyDetails/components/CatalogueContent';
 import CompanyDetails from '../views/Authentication/RegistrationScreen/components/CompanyDetails';
 import UserBankInfo from '../views/Authentication/RegistrationScreen/components/UserBankInfo';
+import ForgotPassword from '../views/Authentication/ForgotPassword';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -54,6 +55,10 @@ const Route = () => {
         <Stack.Screen
           component={RegistrationScreen}
           name="RegistrationScreenView"
+        />
+        <Stack.Screen
+          component={ForgotPassword}
+          name="ForgotPassword"
         />
         <Stack.Screen
           component={CompanyDetails}

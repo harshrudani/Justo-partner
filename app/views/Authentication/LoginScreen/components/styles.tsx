@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     width: normalizeWidth(200),
   },
   inputView: {
-    flex: 5,
+    flex: 4,
     justifyContent: 'flex-end'
   },
   inputWrap: {
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     fontFamily: FONT_FAMILY_SEMIBOLD,
   },
   bottomView: {
-    flex: 1,
+    flex: 2,
     alignContent: 'flex-end',
     flexDirection: 'row',
     flexWrap: 'wrap',

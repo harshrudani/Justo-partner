@@ -22,6 +22,9 @@ const LoginScreen = ({navigation}: any) => {
   const handleSingupPress = () => {
     navigation.navigate('RegistrationScreenView');
   };
+  const handleForgotPress = () => {
+    navigation.navigate('ForgotPassword');
+  };
   return (
     <LoginView
       handleEmailChange={handleEmailChange}
@@ -29,6 +32,7 @@ const LoginScreen = ({navigation}: any) => {
       validEmail={validEmail}
       handleLoginPress={handleLoginPress}
       handleSingupPress={handleSingupPress}
+      handleForgotPress={handleForgotPress}
     />
   );
 };
