@@ -63,6 +63,7 @@ const strings = new LocalizedStrings({
     createnewagency: 'Create New Agency',
     sendotp: 'Send Otp',
     forgotPasswordHeader: 'Forgot Password',
+    visitor: 'Visitor',
   },
 });
 

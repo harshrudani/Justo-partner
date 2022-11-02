@@ -21,6 +21,7 @@ import CatalogueContent from '../views/PropertyMangement/PropertyDetails/compone
 import CompanyDetails from '../views/Authentication/RegistrationScreen/components/CompanyDetails';
 import UserBankInfo from '../views/Authentication/RegistrationScreen/components/UserBankInfo';
 import ForgotPassword from '../views/Authentication/ForgotPassword';
+import LeadManagementScreen from '../views/LeadManagement/LeadManagementScreen';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -35,6 +36,7 @@ const DrawerComponent = () => {
       <Drawer.Screen name="Notifications" component={NotificationScreen} />
       <Drawer.Screen  name="PropertyScreenView" component={PropertyScreen} />
       <Drawer.Screen name="AgentListing" component={AgentListingScreen}  />
+      <Drawer.Screen name="LeadManagement" component={LeadManagementScreen}  />
       
       {/* <Stack.Screen component={PropertyScreen} name="PropertyScreenView" /> */}
     </Drawer.Navigator>
@@ -51,7 +53,7 @@ const Route = () => {
           component={OnboardingScreen}
           name="OnboardingScreenView"
         /> */}
-        <Stack.Screen component={LoginScreen} name="LoginScreenView" />
+        {/* <Stack.Screen component={LoginScreen} name="LoginScreenView" />
         <Stack.Screen
           component={RegistrationScreen}
           name="RegistrationScreenView"
@@ -67,7 +69,7 @@ const Route = () => {
         <Stack.Screen
           component={OtpVerificationScreen}
           name="OtpVerificationScreenView"
-        />
+        /> */}
         <Stack.Screen component={DrawerComponent} name="DashboardScreenView" />
         <Stack.Screen component={PropertyDetails} name="PropertyDetails" />
         <Stack.Screen component={UserBankInfo} name="UserBankInfo" />

@@ -1,5 +1,4 @@
 import { Platform } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export const FONT_FAMILY_LIGHT = 'Nunito-Light';
 export const FONT_FAMILY_REGULAR = 'Nunito-Regular';
@@ -25,4 +24,3 @@ export const checkSpecialChar = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
 
 export const Isios = Platform.OS === 'ios'
 
-export const insets = useSafeAreaInsets();
