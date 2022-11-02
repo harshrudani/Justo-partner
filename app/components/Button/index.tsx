@@ -10,14 +10,14 @@ import {
 
 const Button = (props: any) => {
   const {
-    height = 50,
+    height = 45,
     width = 250,
     bgcolor = PRIMARY_THEME_COLOR,
     border = 50,
     bordercolor = null,
     borderWidth = 0,
     btnTxtcolor = WHITE_COLOR,
-    btnTxtsize = 20,
+    btnTxtsize = 15,
     textTransform = "capitalize",
     rightImage
   } = props;

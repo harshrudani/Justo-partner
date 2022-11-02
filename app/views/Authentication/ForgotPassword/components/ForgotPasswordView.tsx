@@ -6,23 +6,14 @@ import InputField from '../../../../components/InputField'
 import Button from '../../../../components/Button'
 import strings from '../../../../components/utilities/Localization'
 import Header from '../../../../components/Header'
+import LogoView from '../../Logoview'
 
 const ForgotPasswordView = (props: any) => {
   return (
     <View style={styles.mainContainer}>
-        <Header
-        headerText={strings.forgotPasswordHeader}
-        headerStyle={styles.headerStyle}
-        headerTextStyle={styles.headerTextStyle}
-        leftImageSrc={images.backArrow}
-        // handleOnLeftIconPress={onPressBack}
-      />
+      
        <View style={styles.logoView}>
-        <Image
-          style={styles.loginBanner}
-          source={images.loginBanner}
-          resizeMode="contain"
-        />
+         <LogoView/>
       </View>
       <View style={styles.inputView}>
       <View style={styles.inputWrap}>

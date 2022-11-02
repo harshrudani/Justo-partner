@@ -7,7 +7,7 @@ import Button from "../../../../components/Button";
 import strings from "../../../../components/utilities/Localization";
 import Logoview from "../../Logoview"
 
-const LoginView = (props: any) => {
+const ChangePasswordView = (props: any) => {
   const [isVisiblePassword, setIsVisiblePassword] = useState(true);
   const handlePasswordBtnPress = () => {
     setIsVisiblePassword(!isVisiblePassword);
@@ -22,28 +22,24 @@ const LoginView = (props: any) => {
           <Image style={styles.logoImage} source={images.logoWhiteBG} />
         </View>
       </View> */}
-
-      
       <View style={styles.logoView}>
-       {/*  <Image
-          style={styles.loginBanner}
-          source={images.loginBanner}
-          resizeMode="contain"
-        /> */}
+      
         <Logoview/>
       </View>
       <View style={styles.inputView}>
         <View style={styles.inputWrap}>
           <InputField
-            placeholderText={"Email Address"}
-            rightImgSrc={props.validEmail ? images.check : images.emailIcon}
+            placeholderText={"New Password"}
+            rightImgSrc={
+              isVisiblePassword ? images.showPassword : images.hiddenPassword
+            }
             isSecureText={false}
             onChangeText={props.handleEmailChange}
           />
         </View>
         <View style={styles.inputWrap}>
           <InputField
-            placeholderText={"Password"}
+            placeholderText={"Confirm Password"}
             rightImgSrc={
               isVisiblePassword ? images.showPassword : images.hiddenPassword
             }
@@ -52,13 +48,11 @@ const LoginView = (props: any) => {
             onChangeText={props.handlePasswordChange}
           />
         </View>
-        <TouchableOpacity style={styles.forgotTouch} onPress={props.handleForgotPress}>
-          <Text style={styles.forgotText}>{strings.forgotPassword}</Text>
-        </TouchableOpacity>
+        
         <View style={styles.btnView}>
           <Button
-            buttonText={strings.signInText}
-            handleBtnPress={props.handleLoginPress}
+            buttonText={strings.changetxt}
+            handleBtnPress={props.handlechanngePress}
           />
         </View>
         {/* <View style={styles.dontHaveView}>
@@ -67,15 +61,7 @@ const LoginView = (props: any) => {
             <Text style={styles.registerText}>{strings.registerNow}</Text>
           </TouchableOpacity>
         </View> */}
-        <View style={styles.dontHaveView}>
-          <Text style={styles.dontText}>{strings.newUserText}</Text>
-          <TouchableOpacity
-            style={styles.registerTouch}
-            onPress={props.handleSingupPress}
-          >
-            <Text style={styles.registerText}>{strings.signUp}</Text>
-          </TouchableOpacity>
-        </View>
+       
       </View>
       <View style={styles.bottomView}>
         <Text style={styles.bottomText}>{strings.byCreating}</Text>
@@ -91,4 +77,4 @@ const LoginView = (props: any) => {
   );
 };
 
-export default LoginView;
+export default ChangePasswordView;

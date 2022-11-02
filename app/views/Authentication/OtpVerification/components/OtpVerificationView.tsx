@@ -22,7 +22,7 @@ const OtpVerificationView = (props: any) => {
         <Image
           style={styles.loginBanner}
           source={images.loginBanner}
-          resizeMode="contain"
+          resizeMode="stretch"
         />
       </View>
         <View style={styles.DescbottomView}>
