@@ -7,6 +7,8 @@ const strings = new LocalizedStrings({
     notificationHeader: 'Notification',
     dashboardHeader: 'Dashboard',
     registrationHeader: 'Registration',
+    companyDetails: 'Company Information',
+    registernow: 'register now',
     propertyHeader: 'Property',
     propertyManagementHeader: 'Property Management',
     agencyHeader: 'Agent',
@@ -36,6 +38,7 @@ const strings = new LocalizedStrings({
     confirmation: 'Confirmation',
     ConfirmationModalTxt: 'Select the reason for\r\nunsubscribe this property.',
     Confirm: 'CONFIRM',
+    changetxt: 'Confirm',
     searchProperty: 'Search Property',
     apply: 'APPLY',
     resend: 'Resend',
@@ -57,7 +60,10 @@ const strings = new LocalizedStrings({
     edit: 'Edit',
     deactive: 'Deactive',
     agentdetail: 'Agent Detail',
-    
+    userbankinfo: 'User Bank Info',
+    createnewagency: 'Create New Agency',
+    sendotp: 'Send Otp',
+    forgotPasswordHeader: 'Forgot Password',
   },
 });
 

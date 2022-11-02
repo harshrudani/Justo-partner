@@ -7,6 +7,7 @@ import {
   GRAY_COLOR,
   PRIMARY_THEME_COLOR,
   WHITE_COLOR,
+  PRIMARY_THEME_COLOR_DARK,
 } from '../../../../components/utilities/constant';
 
 const styles = StyleSheet.create({

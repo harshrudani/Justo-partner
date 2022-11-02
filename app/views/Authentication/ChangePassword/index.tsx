@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {validateEmail} from '../../../components/utilities/constant';
-import LoginView from './components/LoginView';
+import ChangePasswordView from './components/ChangePasswordView';
 
-const LoginScreen = ({navigation}: any) => {
+const ChangePassword = ({navigation}: any) => {
   const [validEmail, setIsValidEmail] = useState(false);
   const handleEmailChange = (val: any) => {
     if (val.length <= 0) {
@@ -16,25 +16,19 @@ const LoginScreen = ({navigation}: any) => {
   const handlePasswordChange = (val: any) => {
     console.log('val', val);
   };
-  const handleLoginPress = () => {
-    navigation.navigate('DashboardScreenView');
+  const handlechanngePress = () => {
+    navigation.navigate('LoginScreenView');
   };
-  const handleSingupPress = () => {
-    navigation.navigate('RegistrationScreenView');
-  };
-  const handleForgotPress = () => {
-    navigation.navigate('ForgotPassword');
-  };
+  
   return (
-    <LoginView
+    <ChangePasswordView
       handleEmailChange={handleEmailChange}
       handlePasswordChange={handlePasswordChange}
       validEmail={validEmail}
-      handleLoginPress={handleLoginPress}
-      handleSingupPress={handleSingupPress}
-      handleForgotPress={handleForgotPress}
+      handlechanngePress={handlechanngePress}
+     
     />
   );
 };
 
-export default LoginScreen;
+export default ChangePassword;

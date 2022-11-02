@@ -23,3 +23,5 @@ export const validateEmail =
 export const checkSpecialChar = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
 
 export const Isios = Platform.OS === 'ios'
+
+

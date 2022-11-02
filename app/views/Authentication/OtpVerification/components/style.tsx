@@ -11,10 +11,11 @@ const styles = StyleSheet.create({
       logoView: {
         alignItems: 'center',
         justifyContent: 'center',
+        //backgroundColor:'red'
       },
       loginBanner: {
         width: width,
-        height: 220,
+        //height: 220,
       },
       logoImage: {
         height: normalizeHeight(100),
@@ -29,6 +30,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         marginHorizontal: normalizeSpacing(30),
         marginTop: normalizeSpacing(30),
+        
       },
       bottomView: {
         flex: 1,
@@ -84,11 +86,11 @@ const styles = StyleSheet.create({
         height: normalizeHeight(60),
         borderRadius: 5,
         borderWidth: 1,
-        // backgroundColor: WHITE_COLOR,
-        shadowColor: BLACK_COLOR,
+        backgroundColor: WHITE_COLOR,
+        //shadowColor: BLACK_COLOR,
         shadowOpacity: 0.2,
         shadowRadius: 6,
-        elevation: 10,
+        elevation: 1,
         color: PRIMARY_THEME_COLOR,
         fontSize: normalize(20),
       },

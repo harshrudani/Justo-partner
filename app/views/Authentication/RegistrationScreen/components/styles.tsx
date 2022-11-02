@@ -94,6 +94,9 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     fontSize: normalize(13),
     fontFamily: FONT_FAMILY_EXTRABOLD
+  },
+  btnView: {
+    marginBottom: normalizeSpacing(20),
   }
 });
 

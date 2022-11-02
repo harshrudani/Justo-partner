@@ -18,6 +18,10 @@ import OtpVerificationScreen from '../views/Authentication/OtpVerification';
 import ImageContent from '../views/PropertyMangement/PropertyDetails/components/ImageContent';
 import VideoContent from '../views/PropertyMangement/PropertyDetails/components/VideoContent';
 import CatalogueContent from '../views/PropertyMangement/PropertyDetails/components/CatalogueContent';
+import CompanyDetails from '../views/Authentication/RegistrationScreen/components/CompanyDetails';
+import UserBankInfo from '../views/Authentication/RegistrationScreen/components/UserBankInfo';
+import ForgotPassword from '../views/Authentication/ForgotPassword';
+import ChangePasswordScreen from '../views/Authentication/ChangePassword';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -32,6 +36,7 @@ const DrawerComponent = () => {
       <Drawer.Screen name="Notifications" component={NotificationScreen} />
       <Drawer.Screen name="PropertyScreenView" component={PropertyScreen} />
       <Drawer.Screen name="AgentListing" component={AgentListingScreen} />
+      <Stack.Screen component={LoginScreen} name="LoginScreenView" />
 
       {/* <Stack.Screen component={PropertyScreen} name="PropertyScreenView" /> */}
     </Drawer.Navigator>
@@ -42,19 +47,36 @@ const Route = () => {
     <NavigationContainer>
       <Stack.Navigator screenOptions={screenOptions}>
         <Stack.Screen component={SplashScreen} name="SplashScreenView" />
-        <Stack.Screen component={DrawerComponent} name="DashboardScreenView" />
-        <Stack.Screen component={OnboardingScreen} name="OnboardingScreenView" />
+        <Stack.Screen
+          component={OnboardingScreen}
+          name="OnboardingScreenView"
+        /> 
         <Stack.Screen component={LoginScreen} name="LoginScreenView" />
-        <Stack.Screen component={RegistrationScreen} name="RegistrationScreenView" />
-        <Stack.Screen component={OtpVerificationScreen} name="OtpVerificationScreenView" />
-      
+        <Stack.Screen
+          component={RegistrationScreen}
+          name="RegistrationScreenView"
+        />
+        <Stack.Screen
+          component={ForgotPassword}
+          name="ForgotPassword"
+        />
+        <Stack.Screen
+          component={CompanyDetails}
+          name="CompanyDetails"
+        />
+        <Stack.Screen
+          component={OtpVerificationScreen}
+          name="OtpVerificationScreenView"
+        />
+         <Stack.Screen component={ChangePasswordScreen} name="ChangePasswordScreenView" />
+        <Stack.Screen component={DrawerComponent} name="DashboardScreenView" />
         <Stack.Screen component={PropertyDetails} name="PropertyDetails" />
+        <Stack.Screen component={UserBankInfo} name="UserBankInfo" />
         <Stack.Screen component={ImageContent} name="ImageContent" />
         <Stack.Screen component={VideoContent} name="VideoContent" />
         <Stack.Screen component={CatalogueContent} name="CatalogueContent" />
-        {/* <Stack.Screen component={DrawerComponent} name="DashboardScreenView" /> */}
-        <Stack.Screen name="PendingAgentList" component={PendingAgentListScreen} />
-        <Stack.Screen name="AgentDetails" component={AgentDetails} />
+        <Stack.Screen name="PendingAgentList" component={PendingAgentListScreen}  />
+        <Stack.Screen name="AgentDetails" component={AgentDetails}  />
       </Stack.Navigator>
     </NavigationContainer>
   );

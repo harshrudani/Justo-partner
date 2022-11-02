@@ -36,9 +36,10 @@ const RegistrationView = (props: any) => {
       <StatusBar barStyle={"dark-content"} />
       <Header
         headerText={strings.registrationHeader}
-        handleOnLeftIconPress={props.handleDrawerPress}
         headerStyle={styles.headerStyle}
         headerTextStyle={styles.headerTextStyle}
+        leftImageSrc={images.backArrow}
+        handleOnLeftIconPress={props.onPressBack}
       />
       <View style={styles.wrap}>
         <Text style={styles.headingText}>{strings.basicInfoText}</Text>
@@ -161,7 +162,7 @@ const RegistrationView = (props: any) => {
           </TouchableOpacity>
         </View>
         <View>
-          <Button buttonText={strings.next} textTransform={"uppercase"} />
+          <Button handleBtnPress={props.onPressNext} rightImage={images.forwardArrow} buttonText={strings.next} textTransform={"uppercase"} />
         </View>
       </View>
     </ScrollView>

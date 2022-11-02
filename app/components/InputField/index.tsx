@@ -2,8 +2,12 @@ import {View, TextInput, Image, TouchableOpacity, Text} from 'react-native';
 import React from 'react';
 import styles from './styles';
 import {BLACK_COLOR} from '../utilities/constant';
+import images from '../../assets/images';
 
 const InputField = (props: any) => {
+  const  {
+    inputWidth =  '90%',
+  } = props
   const onSubmit = (e: any) => {
     const {text} = e;
     console.log('e on submit', text);
@@ -15,7 +19,7 @@ const InputField = (props: any) => {
       </View>
       <View style={styles.mainContainer}>
         <TextInput
-          style={styles.input}
+          style={[styles.input, { width: inputWidth,}]}
           onChangeText={val => props.onChangeText(val)}
           onSubmitEditing={onSubmit}
           placeholder={props.placeholderText}

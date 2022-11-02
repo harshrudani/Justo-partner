@@ -8,7 +8,7 @@ import Header from '../../../../components/Header';
 import images from '../../../../assets/images';
 import strings from '../../../../components/utilities/Localization';
 import ConfirmModal from '../../../../components/Modals/ConfirmModal';
-import { PRIMARY_THEME_COLOR_DARK } from '../../../../components/utilities/constant';
+import { PRIMARY_THEME_COLOR_DARK, PRIMARY_THEME_COLOR } from '../../../../components/utilities/constant';
 import FilterModal from '../../../../components/Modals/FilterModal';
 
 const PropertyView = (props: any) => {
@@ -64,7 +64,7 @@ const navigation: any = useNavigation()
     <View style={styles.mainContainer}>
       <View
         style={{
-          backgroundColor: PRIMARY_THEME_COLOR_DARK,
+          backgroundColor: PRIMARY_THEME_COLOR,
           height: insets.top,
         }}
       />

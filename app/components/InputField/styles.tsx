@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
     fontSize: normalize(18),
     paddingRight: normalizeSpacing(30),
     paddingLeft: normalizeSpacing(Isios ? 5 : 15),
-    width: '90%',
     fontFamily: FONT_FAMILY_SEMIBOLD,
     opacity: 0.6,
   },
