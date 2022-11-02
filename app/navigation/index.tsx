@@ -1,7 +1,7 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {createDrawerNavigator} from '@react-navigation/drawer';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import DashboardScreen from '../views/DashboardScreen';
 import NotificationScreen from '../views/NotificationsScreen';
 import customDrawer from './customDrawer';
@@ -24,15 +24,16 @@ import ForgotPassword from '../views/Authentication/ForgotPassword';
 import LeadManagementScreen from '../views/LeadManagement/LeadManagementScreen';
 import BulkUpload from '../views/LeadManagement/LeadManagementScreen/Components/BulkUpload';
 import AddNewVisitorScreen from '../views/LeadManagement/AddNewVisitor';
+import ChangePasswordScreen from '../views/Authentication/ChangePassword';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
-const screenOptions = {headerShown: false, gestureEnabled: true};
+const screenOptions = { headerShown: false, gestureEnabled: true };
 const DrawerComponent = () => {
   return (
     <Drawer.Navigator
       initialRouteName="Home"
-      screenOptions={{headerShown: false, drawerType: 'front'}}
+      screenOptions={{ headerShown: false, drawerType: 'front' }}
       drawerContent={props => customDrawer(props)}>
       <Drawer.Screen name="DashboardScreen" component={DashboardScreen} />
       <Drawer.Screen name="Notifications" component={NotificationScreen} />
@@ -48,14 +49,12 @@ const Route = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={screenOptions}>
-        {/* <Stack.Screen component={SplashScreen} name="SplashScreenView" />
-         <Stack.Screen component={DrawerComponent} name="DashboardScreenView" />
         <Stack.Screen component={SplashScreen} name="SplashScreenView" />
         <Stack.Screen
           component={OnboardingScreen}
           name="OnboardingScreenView"
-        /> */}
-        {/* <Stack.Screen component={LoginScreen} name="LoginScreenView" />
+        /> 
+        <Stack.Screen component={LoginScreen} name="LoginScreenView" />
         <Stack.Screen
           component={RegistrationScreen}
           name="RegistrationScreenView"
@@ -71,7 +70,8 @@ const Route = () => {
         <Stack.Screen
           component={OtpVerificationScreen}
           name="OtpVerificationScreenView"
-        /> */}
+        />
+         <Stack.Screen component={ChangePasswordScreen} name="ChangePasswordScreenView" />
         <Stack.Screen component={DrawerComponent} name="DashboardScreenView" />
         <Stack.Screen component={PropertyDetails} name="PropertyDetails" />
         <Stack.Screen component={UserBankInfo} name="UserBankInfo" />

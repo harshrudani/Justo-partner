@@ -8,7 +8,7 @@ const OtpVerificationScreen = ({navigation}: any) => {
         setOtp(value);
     }
     const OnpressConfirm = () => {
-      navigation.navigate('DashboardScreenView')
+      navigation.navigate('ChangePasswordScreenView')
     }
   return (
     <OtpVerificationView otp={otp} setOtp={setOtp} OnpressConfirm={OnpressConfirm} handleOtpChange={handleOtpChange}/>

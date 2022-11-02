@@ -136,6 +136,9 @@ const customDrawer = ({navigation}: any) => {
         <DrawerTabSection
           iconSource={images.logout}
           tabTitle={strings.logout}
+          handleDrawerNavigation={() => {
+            navigation.navigate('LoginScreenView');
+          }}
         />
       </DrawerContentScrollView>
       <View style={styles.versionView}>

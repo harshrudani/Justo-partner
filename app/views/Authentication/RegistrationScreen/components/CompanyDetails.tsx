@@ -138,7 +138,7 @@ const CompanyDetails = ({navigation}: any) => {
         </View>
       </View>
       <View style={styles.btnView}>
-        <Button handleBtnPress={onPressRegister} btnTxtsize={18} buttonText={strings.createnewagency} textTransform={'uppercase'}  />
+        <Button handleBtnPress={onPressRegister}  buttonText={strings.createnewagency} textTransform={'uppercase'}  />
       </View>
     </ScrollView>
   );

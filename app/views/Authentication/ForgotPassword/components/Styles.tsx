@@ -14,7 +14,6 @@ const styles = StyleSheet.create({
     color: BLACK_COLOR,
   },
   logoView: {
-    flex: 1,
     alignItems: "center",
     justifyContent: "center",
   },

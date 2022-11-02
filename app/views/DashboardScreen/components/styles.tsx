@@ -84,22 +84,22 @@ const styles = StyleSheet.create({
     backgroundColor: WHITE_COLOR,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 20,
+    borderRadius: 15,
   },
   qrCodeImage: {
-    height: normalizeHeight(70),
-    width: normalizeWidth(70),
+    height: normalizeHeight(50),
+    width: normalizeWidth(60),
   },
   linkImageView: {
     position: 'absolute',
     top: '100%',
     right: '100%',
     backgroundColor: WHITE_COLOR,
-    borderRadius: 40,
+    borderRadius: 30,
   },
   linkImage: {
-    height: normalizeHeight(30),
-    width: normalizeWidth(30),
+    height: normalizeHeight(25),
+    width: normalizeWidth(25),
   },
   firstCardView: {
     flex: 2,
