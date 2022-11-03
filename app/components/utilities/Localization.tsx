@@ -72,7 +72,12 @@ const strings = new LocalizedStrings({
     propertyrequire: 'Property Require',
     createVisitor: 'Create Visitor',
     createandschedule: 'Create & schedule',
-
+    propertyrequired: 'Property Required',
+    Customerdetails: 'Customer Details',
+    companydetails: 'Company Details',
+    Statusupdate: 'Status Update',
+    ScheduleSitevisite: 'Schedule Site Visite',
+    allfollowup: 'All Followup',
     no: 'No', 
     yes: 'Yes', 
     agent: 'Agent', 
