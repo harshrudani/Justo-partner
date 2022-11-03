@@ -11,106 +11,93 @@ import {
 
 const styles = StyleSheet.create({
   headerStyle: {
-    backgroundColor: PRIMARY_THEME_COLOR,
+    backgroundColor: WHITE_COLOR,
   },
-  RightFirstIconStyle: {
-    tintColor: WHITE_COLOR,
+  headerTextStyle: {
+    color: BLACK_COLOR,
   },
   mainContainer: {
     flex: 1,
   },
-  propertyListView: {
+  wrap: {
     flex: 1,
-    margin: normalizeSpacing(2),
+    margin: normalizeSpacing(20),
+    alignItems: 'center'
   },
-  btnView: {
-    flex: 0.6,
-    top:5,
-    //margin: normalizeSpacing(3),
-    flexDirection:'row-reverse',
-    marginLeft:normalizeSpacing(22),
-    //backgroundColor:'red'
-  },
-  propertyListViewsec: {
-    flex: 5.4,
-    margin: normalizeSpacing(0),
-  },
-  IteamView: {
-    backgroundColor: WHITE_COLOR,
-    marginHorizontal: normalizeSpacing(10),
-    borderRadius: 10,
-    marginVertical: normalizeSpacing(10),
-  },
-  Txtview : {
-    flexDirection: 'row',
-    alignItems: 'center',
-    borderBottomColor: GRAY_COLOR,
-    borderBottomWidth: 1,
-    padding: normalizeSpacing(4),
-    marginTop: normalizeSpacing(2),
-  },
-  projectContainer : {
-    flex: 2.5,
-    alignItems: 'flex-end',
-  },
-  projectTxt : {
-    fontSize: normalize(15),
+  headingText: {
+    fontSize: normalize(18),
     fontFamily: FONT_FAMILY_SEMIBOLD,
-  },
-  nameContainer : {
-    flex: 3.5,
-    alignItems: 'flex-start',
-  },
-  nameTxt : {
-    fontSize: normalize(15),
-    fontFamily: FONT_FAMILY_EXTRABOLD,
-    color: BLACK_COLOR,
-    marginHorizontal: normalizeSpacing(10)
-  },
-  buttonContainer : {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginVertical: normalizeSpacing(10),
-  },
-  buttonbox : {
-    top: 12,
-    backgroundColor: WHITE_COLOR,
-    width: normalizeWidth(100),
-    height: normalizeHeight(30),
-    marginLeft: normalizeSpacing(8),
-    justifyContent: 'center',
-    borderWidth: 0.5,
-    borderRadius: 7,
-    
-  },
-  button : {
-    top: 5,
-    backgroundColor: WHITE_COLOR,
-    width: normalizeWidth(150),
-    height: normalizeHeight(35),
-    marginLeft: normalizeSpacing(5),
-    justifyContent: 'center',
-    //borderWidth: 0.5,
-    borderRadius: 7,
-    
-    
-  },
-  Viewbutton : {
-    top: 10,
-    backgroundColor: PRIMARY_THEME_COLOR,
-    borderBottomEndRadius: 10,
-    borderTopLeftRadius: 10,
-    padding: normalizeSpacing(5)
-  },
-  arrow : {
-    tintColor: WHITE_COLOR,
-    width: normalizeWidth(30),
-    height: normalizeHeight(30)
-  },
-  buttonTxt : {
-    color: WHITE_COLOR,
+    color: PRIMARY_THEME_COLOR,
     textAlign: 'center'
   },
+  underlineStyle: {
+    width: normalizeWidth(60),
+    height: normalizeHeight(1),
+    backgroundColor: GRAY_COLOR,
+    marginTop: normalizeSpacing(5),
+  },
+  imageCircle: {
+    backgroundColor: GRAY_COLOR,
+    marginVertical: normalizeSpacing(10),
+    borderRadius: normalizeSpacing(100),
+    height: normalizeHeight(100),
+    width: normalizeWidth(100),
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  inputWrap: {
+    marginTop: normalizeSpacing(30),
+  },
+  genderView: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    marginVertical: normalizeSpacing(10),
+    width: '100%'
+  },
+  genderTxt: {
+    fontSize: normalize(18),
+    fontWeight: 'bold',
+    color: BLACK_COLOR,
+  },
+  radioView: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: normalizeSpacing(10)
+  },
+  radioTxt : {
+    fontSize: normalize(18),
+  },
+  workingView : {
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginVertical: normalizeSpacing(10)
+  },
+  addBtn: {
+    backgroundColor: PRIMARY_THEME_COLOR,
+    width: normalizeWidth(140),
+    height: normalizeHeight(25),
+    borderRadius: 100,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  addTxt: {
+    color: WHITE_COLOR,
+    textTransform: 'uppercase',
+    fontSize: normalize(13),
+    fontFamily: FONT_FAMILY_EXTRABOLD
+  },
+  workTxt: {
+    color: BLACK_COLOR,
+    textTransform: 'uppercase',
+    fontSize: normalize(13),
+    fontFamily: FONT_FAMILY_EXTRABOLD
+  },
+  btnView: {
+    marginBottom: normalizeSpacing(20),
+  }
 });
 
 export default styles;

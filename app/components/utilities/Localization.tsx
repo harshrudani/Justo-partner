@@ -37,8 +37,7 @@ const strings = new LocalizedStrings({
     propertyDetailHeader: 'Property Detail',
     confirmation: 'Confirmation',
     ConfirmationModalTxt: 'Select the reason for\r\nunsubscribe this property.',
-    Confirm: 'CONFIRM',
-    changetxt: 'Confirm',
+    Confirm: 'Confirm',
     searchProperty: 'Search Property',
     apply: 'APPLY',
     resend: 'Resend',
@@ -62,7 +61,7 @@ const strings = new LocalizedStrings({
     agentdetail: 'Agent Detail',
     userbankinfo: 'User Bank Info',
     createnewagency: 'Create New Agency',
-    sendotp: 'Send Otp',
+    sendotp: 'Send OTP',
     forgotPasswordHeader: 'Forgot Password',
     visitor: 'Visitor',
     bulkupload: 'Bulk Upload',
@@ -73,6 +72,13 @@ const strings = new LocalizedStrings({
     propertyrequire: 'Property Require',
     createVisitor: 'Create Visitor',
     createandschedule: 'Create & schedule',
+
+    no: 'No', 
+    yes: 'Yes', 
+    createAgent: 'Create Agent', 
+    searchAgent: 'Search Agent',
+    updatepassword: 'Update Password',
+    deactivconfirmation: 'Are You sure you want to Deactive this',
   },
 });
 

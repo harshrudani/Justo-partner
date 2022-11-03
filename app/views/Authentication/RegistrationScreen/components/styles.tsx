@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
     backgroundColor: GRAY_COLOR,
     marginVertical: normalizeSpacing(10),
     borderRadius: normalizeSpacing(100),
-    height: normalizeHeight(120),
-    width: normalizeWidth(120),
+    height: normalizeHeight(100),
+    width: normalizeWidth(100),
     alignItems: 'center',
     justifyContent: 'center'
   },

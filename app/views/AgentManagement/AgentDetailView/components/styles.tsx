@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     paddingVertical: normalizeSpacing(10),
   },
   projectContainer : {
-    flex: 2.5,
+    flex: 3,
     alignItems: 'flex-end',
   },
   projectTxt : {
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     fontFamily: FONT_FAMILY_SEMIBOLD,
   },
   nameContainer : {
-    flex: 3.5,
+    flex: 3,
     alignItems: 'flex-start',
   },
   nameTxt : {

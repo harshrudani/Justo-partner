@@ -8,6 +8,7 @@ import Header from '../../../../components/Header';
 import images from '../../../../assets/images';
 import strings from '../../../../components/utilities/Localization';
 import ConfirmModal from '../../../../components/Modals/ConfirmModal';
+import FilterModal from './AgentFilterModel';
 import { PRIMARY_THEME_COLOR_DARK } from '../../../../components/utilities/constant';
 
 import {
@@ -20,8 +21,10 @@ import {
 } from '../../../../components/utilities/constant';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
+
 const AgentView = (props: any) => {
   const [isVisible, setIsVisible] = useState(false)
+  const [FilterisVisible, setFilterisVisible] = useState(false)
   const insets = useSafeAreaInsets();
   const navigation: any = useNavigation()
     const DATA: any = [
@@ -69,7 +72,7 @@ const AgentView = (props: any) => {
   const ShowPendinglist = () => {
     navigation.navigate('PendingAgentList')
   }
-  const AddnewAgent = () => {
+  const onPressAddnewAgent = () => {
     navigation.navigate('AddnewAgent')
   }
 
@@ -90,13 +93,14 @@ const AgentView = (props: any) => {
         handleOnLeftIconPress={props.handleDrawerPress}
         headerStyle={styles.headerStyle}
         RightFirstIconStyle={styles.RightFirstIconStyle}
+        handleOnRightFirstIconPress={() => setFilterisVisible(true)}
       />
       <View style={styles.propertyListView}>
 
       <View style={styles.btnView}>
 
       <TouchableOpacity
-        onPress={() => AddnewAgent()}
+        onPress={() => onPressAddnewAgent()}
          style={[styles.button, { borderColor:  BLACK_COLOR,backgroundColor:PRIMARY_THEME_COLOR}]} >
           <Text style={[styles.buttonTxt,{
           color:WHITE_COLOR  }]}>{strings.addnewagent}</Text>
@@ -118,12 +122,20 @@ const AgentView = (props: any) => {
         <FlatList 
           showsVerticalScrollIndicator={false}
           data={DATA}
-          renderItem={({item}) => <AgentListItem items={item} setIsVisible={setIsVisible} onPressView={onPressView} />}
+          renderItem={({item}) => <AgentListItem items={item} setIsVisible={setIsVisible} onPressView={onPressView} 
+          onPressAddnewAgent={onPressAddnewAgent} 
+          />}
         />
         </View> 
       </View>
-      <ConfirmModal Visible={isVisible} setIsVisible={setIsVisible} />
-      {/* <FilterModal /> */}
+      <ConfirmModal 
+        Visible={isVisible} 
+        setIsVisible={setIsVisible}
+        stringshow = {strings.confirmation}
+        textshow = {strings.deactivconfirmation+' '+strings.agent+'?'}
+        confirmtype = {'CONFIRMATION'}
+      />
+      <FilterModal Visible={FilterisVisible} setIsVisible={setFilterisVisible} />
     </View>
   );
 };

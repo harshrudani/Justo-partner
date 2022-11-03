@@ -51,7 +51,7 @@ const ChangePasswordView = (props: any) => {
         
         <View style={styles.btnView}>
           <Button
-            buttonText={strings.changetxt}
+            buttonText={strings.updatepassword}
             handleBtnPress={props.handlechanngePress}
           />
         </View>
