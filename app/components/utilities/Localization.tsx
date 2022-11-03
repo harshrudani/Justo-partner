@@ -80,6 +80,7 @@ const strings = new LocalizedStrings({
     companydetails: 'Company Details',
     Statusupdate: 'Status Update',
     ScheduleSitevisite: 'Schedule Site Visite',
+    allfollowup: 'All Followup',
   },
 });
 

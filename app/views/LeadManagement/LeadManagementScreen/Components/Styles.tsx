@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     marginTop: normalizeSpacing(2),
   },
   projectContainer : {
-    flex: 2,
+    flex: 2.5,
     alignItems: 'flex-end',
   },
   projectTxt : {
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     color: GRAY_LIGHT_COLOR
   },
   nameContainer : {
-    flex: 4,
+    flex: 3.5,
     alignItems: 'flex-start',
   },
   nameTxt : {
