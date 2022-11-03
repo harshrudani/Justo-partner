@@ -113,6 +113,7 @@ const styles = StyleSheet.create({
     color: WHITE_COLOR,
     textAlign: 'center'
   },
+  
 });
 
 export default styles;

@@ -28,6 +28,10 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     marginHorizontal: normalizeSpacing(10),
   },
+  conteconfirm: {
+    flexDirection: "column",
+    
+  },
   topTxt: {
     color: BLACK_COLOR,
     fontSize: normalize(18),
@@ -44,8 +48,12 @@ const styles = StyleSheet.create({
   },
   closeIcon: {
     tintColor: "red",
-    width: normalizeWidth(30),
-    height: normalizeHeight(30),
+    width: normalizeWidth(25),
+    height: normalizeHeight(25),
+  },
+  btnview: {
+    width: '50%',
+    height: normalizeHeight(50),
   },
   dropdown: {
     margin: 16,

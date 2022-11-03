@@ -48,7 +48,9 @@ const OtpVerificationView = (props: any) => {
           }}
         />
         <View style={styles.btnView}>
-         <Button handleBtnPress={props.OnpressConfirm} buttonText={'confirm'} textTransform={'uppercase'} />
+         <Button handleBtnPress={props.OnpressConfirm} buttonText={'confirm'} 
+         //textTransform={'uppercase'}
+        />
         </View>
         <View style={styles.bottomView}>
           <Text style={styles.bottomText}>{strings.notRecived}</Text>

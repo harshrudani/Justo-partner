@@ -1,11 +1,14 @@
 import React from 'react';
-import AgentView from './components/AgentView';
+import AgentBasicInfoView from './components/AgentBasicInfoView';
 
-const AgentListing = ({navigation}: any) => {
-  const handleDrawerPress = () => {
-    navigation.toggleDrawer();
-  };
-  return <AgentView handleDrawerPress={handleDrawerPress} />;
+const AgentBasicInfo = ({navigation}: any) => {
+  const onPressNext = () => {
+    navigation.navigate('AgentBankInfo')
+  }
+  const onPressBack = () => {
+    navigation.goBack()
+  }
+  return <AgentBasicInfoView onPressBack={onPressBack} onPressNext={onPressNext} />;
 };
 
-export default AgentListing;
+export default AgentBasicInfo;

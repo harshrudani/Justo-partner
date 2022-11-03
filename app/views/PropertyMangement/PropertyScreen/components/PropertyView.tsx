@@ -50,7 +50,7 @@ const navigation: any = useNavigation()
       visitor: 123,
       siteVisit: 234,
       closeVisit: 600,
-      status: 'confirmatin Pending',
+      status: 'confirmatin Pending ',
       createddate: '11/10/2022'
     },
   ];
