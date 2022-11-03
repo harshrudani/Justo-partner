@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     paddingVertical: normalizeSpacing(10),
   },
   projectContainer : {
-    flex: 2.5,
+    flex: 3,
     alignItems: 'flex-end',
   },
   projectTxt : {
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     color: GRAY_LIGHT_COLOR
   },
   nameContainer : {
-    flex: 3.5,
+    flex: 3,
     alignItems: 'flex-start',
   },
   nameTxt : {

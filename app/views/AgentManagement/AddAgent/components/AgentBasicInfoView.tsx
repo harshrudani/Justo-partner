@@ -20,7 +20,7 @@ import InputField from "../../../../components/InputField";
 import images from "../../../../assets/images";
 import Button from "../../../../components/Button";
 
-const RegistrationView = (props: any) => {
+const AgentBasicInfoView = (props: any) => {
   const insets = useSafeAreaInsets();
   const [gender, setGender] = useState("Male");
   const [checked, setChecked] = React.useState("first");
@@ -33,7 +33,7 @@ const RegistrationView = (props: any) => {
           height: insets.top,
         }}
       />
-      <StatusBar barStyle={"dark-content"} />
+      <StatusBar barStyle={"light-content"} />
       <Header
         headerText={strings.basicInfoText}
         headerStyle={styles.headerStyle}
@@ -52,7 +52,7 @@ const RegistrationView = (props: any) => {
             placeholderText={"Name"}
             handleInputBtnPress={() => {}}
             onChangeText={() => {}}
-            headingText={"Owner Name"}
+            headingText={"Agent Name"}
           />
         </View>
         <View style={styles.inputWrap}>
@@ -145,6 +145,14 @@ const RegistrationView = (props: any) => {
             headingText={"Email Address"}
           />
         </View>
+       {/*  <View style={styles.inputWrap}>
+          <InputField
+            placeholderText={"Sourcing Manager"}
+            handleInputBtnPress={() => {}}
+            onChangeText={() => {}}
+            headingText={"Sourcing Manager"}
+          />
+        </View> */}
         <View style={styles.workingView}>
           <View>
             <Text style={styles.workTxt}>Working Location</Text>
@@ -161,4 +169,4 @@ const RegistrationView = (props: any) => {
   );
 };
 
-export default RegistrationView;
+export default AgentBasicInfoView;

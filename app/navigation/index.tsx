@@ -28,6 +28,10 @@ import ChangePasswordScreen from '../views/Authentication/ChangePassword';
 import LeadDetails from '../views/LeadManagement/LeadDetails';
 import FollowUpScreen from '../views/FollowUp/FollowUpScreen';
 
+
+import AddnewAgent from '../views/AgentManagement/AddAgent';
+import AgentBankInfo from '../views/AgentManagement/AddAgent/components/AgentBankInfo';
+
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 const screenOptions = { headerShown: false, gestureEnabled: true };
@@ -85,6 +89,8 @@ const Route = () => {
         {/* Agent Management Screen */}
         <Stack.Screen name="PendingAgentList" component={PendingAgentListScreen}  />
         <Stack.Screen name="AgentDetails" component={AgentDetails}  />
+        <Stack.Screen name="AddnewAgent" component={AddnewAgent}  />
+        <Stack.Screen name="AgentBankInfo" component={AgentBankInfo}  />
         {/* Lead Management Screens */}
         <Stack.Screen name="BulkUpload" component={BulkUpload}  />
         <Stack.Screen name="AddNewVisitorScreen" component={AddNewVisitorScreen}  />
