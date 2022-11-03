@@ -27,7 +27,7 @@ const AddNewVisitorForm = (props: any) => {
             <Header
                 headerText={
                     props.type == 'edit' ?
-                        strings.editvisitor :
+                        strings.editVisitor :
                         strings.addnewvisitor
                 }
                 headerStyle={styles.headerStyle}

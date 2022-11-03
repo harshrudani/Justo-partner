@@ -56,11 +56,11 @@ const Route = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={screenOptions}>
-        {/* <Stack.Screen component={SplashScreen} name="SplashScreenView" /> */}
+        <Stack.Screen component={SplashScreen} name="SplashScreenView" />
         {/* <Stack.Screen
           component={OnboardingScreen}
           name="OnboardingScreenView"
-        /> 
+        />  */}
         <Stack.Screen component={LoginScreen} name="LoginScreenView" />
         <Stack.Screen
           component={RegistrationScreen}
@@ -78,7 +78,7 @@ const Route = () => {
           component={OtpVerificationScreen}
           name="OtpVerificationScreenView"
         />
-         <Stack.Screen component={ChangePasswordScreen} name="ChangePasswordScreenView" /> */}
+         <Stack.Screen component={ChangePasswordScreen} name="ChangePasswordScreenView" />
         <Stack.Screen component={DrawerComponent} name="DashboardScreenView" />
         <Stack.Screen component={UserBankInfo} name="UserBankInfo" />
         {/* Property Management Screens */}
