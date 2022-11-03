@@ -111,7 +111,10 @@ const customDrawer = ({navigation}: any) => {
         />
         <DrawerTabSection
           iconSource={images.event}
-          tabTitle={strings.appointmentWithCPHeader}
+          tabTitle={strings.followupHeader}
+          handleDrawerNavigation={() => {
+            navigation.navigate('FollowUpScreen');
+          }}
         />
         <DrawerTabSection
           iconSource={images.event}

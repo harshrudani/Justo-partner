@@ -74,7 +74,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginBottom: normalizeSpacing(40),
     marginHorizontal: normalizeSpacing(30),
-    
   },
   dontHaveView: {
     flexDirection: 'row',

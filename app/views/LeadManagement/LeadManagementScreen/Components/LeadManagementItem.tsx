@@ -8,7 +8,6 @@ import {
 import images from "../../../../assets/images";
 
 const LeadManagementItem = (props: any) => {
-  console.log("🚀 ~ props", props);
   return (
     <View style={styles.IteamView}>
       <View style={styles.Txtview}>
@@ -83,14 +82,16 @@ const LeadManagementItem = (props: any) => {
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity
-          style={styles.button} >
+          style={styles.button}
+          onPress={() => props.onPressEdit()}
+        >
           <Text style={styles.buttonTxt}>Edit</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button} >
           <Text style={styles.buttonTxt}>Call</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.Viewbutton} >
+        <TouchableOpacity style={styles.Viewbutton} onPress={() => props.onPressView(props.items)}>
           <Image
             source={images.forwardArrow}
             style={styles.arrow}

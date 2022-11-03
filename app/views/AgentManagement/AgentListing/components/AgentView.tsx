@@ -132,7 +132,7 @@ const AgentView = (props: any) => {
         Visible={isVisible} 
         setIsVisible={setIsVisible}
         stringshow = {strings.confirmation}
-        textshow = {strings.deactivconfirmation+' '+strings.agent+'?'}
+        textshow = {strings.deactivconfirmation+' '+strings.agencyHeader+'?'}
         confirmtype = {'CONFIRMATION'}
       />
       <FilterModal Visible={FilterisVisible} setIsVisible={setFilterisVisible} />

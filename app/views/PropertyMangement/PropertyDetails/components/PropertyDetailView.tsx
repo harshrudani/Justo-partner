@@ -60,14 +60,17 @@ const PropertyDetailView = (props: any) => {
       <View style={styles.propertyListView}>
         <PropertyDetailItem items={DATA} onpresContent={onpresContent} />
       </View>
-      <View style={styles.btnContainer}>
+      <View style={[styles.btnContainer, {
+        justifyContent: DATA.status !== "confirmatin Pending" && DATA.status !== "Unsubscribe" ? 'space-between' : 'center'
+          
+      }]}>
         <Button
           buttonText={
             DATA.status == "confirmatin Pending"
               ? strings.active
               : DATA.status == "Subscribe"
-              ? strings.unsubscribe
-              : strings.subscribe
+                ? strings.unsubscribe
+                : strings.subscribe
           }
           width={150}
           height={45}
@@ -76,22 +79,22 @@ const PropertyDetailView = (props: any) => {
             DATA.status == "confirmatin Pending"
               ? BLACK_COLOR
               : DATA.status == "Subscribe"
-              ? "red"
-              : YELLOW_COLOR
+                ? "red"
+                : YELLOW_COLOR
           }
           borderWidth={1.5}
           btnTxtcolor={
             DATA.status == "confirmatin Pending"
               ? BLACK_COLOR
               : DATA.status == "Subscribe"
-              ? "red"
-              : YELLOW_COLOR
+                ? "red"
+                : YELLOW_COLOR
           }
           btnTxtsize={15}
           textTransform={"uppercase"}
         />
         {DATA.status !== "confirmatin Pending" &&
-        DATA.status !== "Unsubscribe" ? (
+          DATA.status !== "Unsubscribe" ? (
           <Button
             buttonText={strings.createVisit}
             width={150}
