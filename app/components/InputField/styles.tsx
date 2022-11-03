@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   },
   inputHeadinView: {
     position: 'absolute',
-    top: normalizeSpacing(-15),
+    top: normalizeSpacing(-10),
     left: normalizeSpacing(20),
     zIndex: 1,
     // backgroundColor: 'transparent',

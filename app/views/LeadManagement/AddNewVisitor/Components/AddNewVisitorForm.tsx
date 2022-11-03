@@ -25,11 +25,15 @@ const AddNewVisitorForm = (props: any) => {
             />
             <StatusBar backgroundColor={PRIMARY_THEME_COLOR} barStyle={"light-content"} />
             <Header
-                headerText={strings.addnewvisitor}
+                headerText={
+                    props.type == 'edit' ?
+                        strings.editvisitor :
+                        strings.addnewvisitor
+                }
                 headerStyle={styles.headerStyle}
                 headerTextStyle={styles.headerTextStyle}
                 leftImageSrc={images.backArrow}
-                handleOnLeftIconPress={props.onPressBack}
+                handleOnLeftIconPress={props.handleBackPress}
             />
             <View style={styles.wrap}>
                 <Text style={styles.headingText}>{strings.visitordetails}</Text>
@@ -427,8 +431,16 @@ const AddNewVisitorForm = (props: any) => {
                     />
                 </View>
                 <View style={styles.btnView}>
-                    <Button width={150} height={45} buttonText={strings.createVisitor} btnTxtsize={18} />
-                    <Button width={150} height={45} buttonText={strings.createandschedule} btnTxtsize={16} />
+                    {props.type == 'edit'
+                        ?
+                        < Button width={150} height={45} buttonText={strings.editVisitor} btnTxtsize={16} />
+                        :
+                        <>
+                            < Button width={150} height={45} buttonText={strings.createVisitor} btnTxtsize={16} />
+                            <Button width={150} height={45} buttonText={strings.createandschedule} btnTxtsize={14} />
+                        </>
+
+                    }
                 </View>
             </View>
         </ScrollView>

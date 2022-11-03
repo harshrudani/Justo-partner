@@ -11,7 +11,7 @@ const LogoView = (props: any) => {
    
       <View>
         <Image
-          style={styles.loginBanner}
+          // style={styles.loginBanner}
           source={images.loginBanner}
           resizeMode="contain"
         />
@@ -23,7 +23,7 @@ const {width} = Dimensions.get('window');
 const styles = StyleSheet.create({
     loginBanner: {
         width: width,
-        marginTop:-3
+        marginTop:-5
         //height: 220,
       },
   });

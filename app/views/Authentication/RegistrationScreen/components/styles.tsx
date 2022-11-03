@@ -21,14 +21,15 @@ const styles = StyleSheet.create({
   },
   wrap: {
     flex: 1,
-    margin: normalizeSpacing(20),
+    marginHorizontal: normalizeSpacing(10),
+    marginVertical: normalizeSpacing(10),
     alignItems: 'center'
   },
   headingText: {
     fontSize: normalize(18),
     fontFamily: FONT_FAMILY_SEMIBOLD,
     color: PRIMARY_THEME_COLOR,
-    textAlign: 'center'
+    textAlign: 'center',
   },
   underlineStyle: {
     width: normalizeWidth(60),
@@ -38,10 +39,10 @@ const styles = StyleSheet.create({
   },
   imageCircle: {
     backgroundColor: GRAY_COLOR,
-    marginVertical: normalizeSpacing(10),
+    marginTop: normalizeSpacing(10),
     borderRadius: normalizeSpacing(100),
-    height: normalizeHeight(120),
-    width: normalizeWidth(120),
+    height: normalizeHeight(100),
+    width: normalizeWidth(100),
     alignItems: 'center',
     justifyContent: 'center'
   },
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    marginVertical: normalizeSpacing(10),
+    marginTop: normalizeSpacing(10),
     width: '100%'
   },
   genderTxt: {

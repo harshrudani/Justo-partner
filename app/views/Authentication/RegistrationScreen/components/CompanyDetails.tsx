@@ -1,7 +1,7 @@
 import { View, Text, StatusBar, TouchableOpacity, ScrollView } from "react-native";
 import React from "react";
 import styles from "./styles";
-import { WHITE_COLOR } from "../../../../components/utilities/constant";
+import { GRAY_LIGHT_COLOR, WHITE_COLOR } from "../../../../components/utilities/constant";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Header from "../../../../components/Header";
 import strings from "../../../../components/utilities/Localization";
@@ -65,6 +65,7 @@ const CompanyDetails = ({navigation}: any) => {
             handleInputBtnPress={() => {}}
             onChangeText={() => {}}
             headingText={"Pan Card"}
+            editable={false}
           />
           <TouchableOpacity 
             style={{
@@ -76,7 +77,7 @@ const CompanyDetails = ({navigation}: any) => {
               borderRadius: 10
             }}
           >
-            <Text>browse</Text>
+            <Text style={{color: GRAY_LIGHT_COLOR}}>Browse</Text>
           </TouchableOpacity>
         </View>
         <View style={[styles.inputWrap, { flexDirection: "row" }]}>
@@ -87,6 +88,7 @@ const CompanyDetails = ({navigation}: any) => {
             handleInputBtnPress={() => {}}
             onChangeText={() => {}}
             headingText={"Decalaration Latter of Company"}
+            editable={false}
           />
           <TouchableOpacity 
             style={{
@@ -98,7 +100,7 @@ const CompanyDetails = ({navigation}: any) => {
               borderRadius: 10
             }}
           >
-            <Text>browse</Text>
+            <Text style={{color: GRAY_LIGHT_COLOR}}>Browse</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.inputWrap}>

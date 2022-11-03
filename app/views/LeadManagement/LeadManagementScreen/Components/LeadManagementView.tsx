@@ -1,5 +1,5 @@
 import { View, Text, FlatList, StatusBar } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Styles";
 import images from "../../../../assets/images";
 import ConfirmModal from "../../../../components/Modals/ConfirmModal";
@@ -11,6 +11,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Header from "../../../../components/Header";
 import Button from "../../../../components/Button";
 import LeadManagementItem from "./LeadManagementItem";
+import { useNavigation } from "@react-navigation/native";
 const DATA: any = [
   {
     Projectname: 'ABC',
@@ -52,6 +53,14 @@ const DATA: any = [
 
 const LeadManagementView = (props: any) => {
   const insets = useSafeAreaInsets();
+  const navigation: any = useNavigation()
+  const [FilterisVisible, setFilterisVisible] = useState(false)
+  const onPressView = () => {
+    navigation.navigate('LeadDetails')
+  }
+  const onPressEdit = () => {
+    navigation.navigate('AddNewVisitorScreen', { type: 'edit' })
+  }
   return (
     <View style={styles.mainContainer}>
       <View
@@ -69,7 +78,7 @@ const LeadManagementView = (props: any) => {
         handleOnLeftIconPress={props.handleDrawerPress}
         headerStyle={styles.headerStyle}
         RightFirstIconStyle={styles.RightFirstIconStyle}
-      //   handleOnRightFirstIconPress={() => setFilterisVisible(true)}
+        handleOnRightFirstIconPress={() => setFilterisVisible(true)}
       />
       <View style={styles.TopBtnView}>
         <Button
@@ -91,11 +100,11 @@ const LeadManagementView = (props: any) => {
         <FlatList
           data={DATA}
           showsVerticalScrollIndicator={false}
-          renderItem={({ item }) => <LeadManagementItem items={item} />}
+          renderItem={({ item }) => <LeadManagementItem items={item} onPressView={onPressView} onPressEdit={onPressEdit} />}
         />
       </View>
-      {/* <ConfirmModal Visible={isVisible} setIsVisible={setIsVisible} />
-    <FilterModal Visible={FilterisVisible} setIsVisible={setFilterisVisible} /> */}
+      {/* <ConfirmModal Visible={isVisible} setIsVisible={setIsVisible} /> */}
+      <FilterModal Visible={FilterisVisible} setIsVisible={setFilterisVisible} />
     </View>
   );
 };
