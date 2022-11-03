@@ -145,14 +145,6 @@ const RegistrationView = (props: any) => {
             headingText={"Email Address"}
           />
         </View>
-        <View style={styles.inputWrap}>
-          <InputField
-            placeholderText={"Sourcing Manager"}
-            handleInputBtnPress={() => {}}
-            onChangeText={() => {}}
-            headingText={"Sourcing Manager"}
-          />
-        </View>
         <View style={styles.workingView}>
           <View>
             <Text style={styles.workTxt}>Working Location</Text>

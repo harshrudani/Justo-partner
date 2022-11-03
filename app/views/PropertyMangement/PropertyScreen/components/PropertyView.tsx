@@ -56,7 +56,6 @@ const navigation: any = useNavigation()
   ];
 
   const onPressView = (items: any) => {
-    console.log("🚀 ~ items", items)
     navigation.navigate('PropertyDetails', items)
   }
 

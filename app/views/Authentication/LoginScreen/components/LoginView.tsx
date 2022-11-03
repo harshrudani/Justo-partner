@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity, ScrollView } from "react-native";
+import { View, Text, Image, TouchableOpacity, ScrollView, StatusBar } from "react-native";
 import React, { useState } from "react";
 import styles from "./styles";
 import images from "../../../../assets/images";
@@ -6,8 +6,11 @@ import InputField from "../../../../components/InputField";
 import Button from "../../../../components/Button";
 import strings from "../../../../components/utilities/Localization";
 import Logoview from "../../Logoview"
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { PRIMARY_THEME_COLOR, WHITE_COLOR } from "../../../../components/utilities/constant";
 
 const LoginView = (props: any) => {
+  const insets = useSafeAreaInsets();
   const [isVisiblePassword, setIsVisiblePassword] = useState(true);
   const handlePasswordBtnPress = () => {
     setIsVisiblePassword(!isVisiblePassword);
@@ -22,6 +25,14 @@ const LoginView = (props: any) => {
           <Image style={styles.logoImage} source={images.logoWhiteBG} />
         </View>
       </View> */}
+      <View
+        style={{
+          backgroundColor: WHITE_COLOR,
+          height: insets.top,
+        }}
+      />
+
+      <StatusBar backgroundColor={PRIMARY_THEME_COLOR} barStyle={"light-content"} />
 
       
       <View style={styles.logoView}>

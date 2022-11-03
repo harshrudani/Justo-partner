@@ -8,7 +8,7 @@ import {
 import React from "react";
 import images from "../../../../assets/images";
 import InputField from "../../../../components/InputField";
-import { WHITE_COLOR } from "../../../../components/utilities/constant";
+import { GRAY_LIGHT_COLOR, WHITE_COLOR } from "../../../../components/utilities/constant";
 import strings from "../../../../components/utilities/Localization";
 import styles from "./styles";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -64,6 +64,7 @@ const UserBankInfo = ({navigation}: any) => {
             handleInputBtnPress={() => {}}
             onChangeText={() => {}}
             headingText={"RERA Certificat"}
+            editable={false}
           />
           <TouchableOpacity
             style={{
@@ -75,7 +76,7 @@ const UserBankInfo = ({navigation}: any) => {
               borderRadius: 10
             }}
           >
-            <Text>browse</Text>
+            <Text style={{color: GRAY_LIGHT_COLOR}}>Browse</Text>
           </TouchableOpacity>
         </View>
         <View style={[styles.inputWrap, { flexDirection: "row" }]}>
@@ -86,6 +87,7 @@ const UserBankInfo = ({navigation}: any) => {
             handleInputBtnPress={() => {}}
             onChangeText={() => {}}
             headingText={"Propidership Declaration Letter"}
+            editable={false}
           />
           <TouchableOpacity
             style={{
@@ -97,7 +99,7 @@ const UserBankInfo = ({navigation}: any) => {
               borderRadius: 10
             }}
           >
-            <Text>browse</Text>
+            <Text style={{color: GRAY_LIGHT_COLOR}}>Browse</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.inputWrap}>
@@ -143,6 +145,7 @@ const UserBankInfo = ({navigation}: any) => {
             handleInputBtnPress={() => {}}
             onChangeText={() => {}}
             headingText={"Cancel Cheaque"}
+            editable={false}
           />
           <TouchableOpacity
             style={{
@@ -154,7 +157,7 @@ const UserBankInfo = ({navigation}: any) => {
               borderRadius: 10
             }}
           >
-            <Text>browse</Text>
+            <Text style={{color: GRAY_LIGHT_COLOR}}>Browse</Text>
           </TouchableOpacity>
         </View>
         <View style={{marginTop: 20}}>
