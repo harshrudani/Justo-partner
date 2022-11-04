@@ -80,6 +80,7 @@ const strings = new LocalizedStrings({
     ScheduleSitevisite: 'Schedule Site Visite',
     followupHeader: 'Follow-up',
     allfollowup: 'All Followup',
+    editfollowup: 'Edit Follow-Up',
     no: 'No', 
     yes: 'Yes', 
     agent: 'Agent', 
@@ -87,6 +88,7 @@ const strings = new LocalizedStrings({
     searchAgent: 'Search Agent',
     updatepassword: 'Update Password',
     deactivconfirmation: 'Are You sure you want to Deactive this',
+    update: 'Update'
   },
 });
 

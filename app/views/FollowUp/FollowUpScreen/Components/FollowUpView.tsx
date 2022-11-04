@@ -7,6 +7,7 @@ import images from '../../../../assets/images'
 import strings from '../../../../components/utilities/Localization'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import FollowUpItem from './FollowUpItem'
+import { useNavigation } from '@react-navigation/native'
 
 const DATA: any = [
   {
@@ -48,15 +49,17 @@ const DATA: any = [
 ];
 
 const FollowUpView = (props: any) => {
-    const insets = useSafeAreaInsets();
-    const onPressView = () => {
-    console.log('onPressView: ', onPressView);
-      
-    }
-    const onPressEdit = () => {
-    console.log('onPressView: ', onPressView);
-      
-    }
+  const insets = useSafeAreaInsets();
+  const navigation: any = useNavigation()
+  const onPressView = () => {
+    navigation.navigate('FollowUpDetails')
+  }
+  const onPressEdit = () => {
+    navigation.navigate('EditFollowUp')
+  }
+  const onPressAllFollowUp = () => {
+    navigation.navigate('AllFollowUpScreen')
+  }
   return (
     <View style={styles.mainContainer}>
       <View
@@ -74,13 +77,12 @@ const FollowUpView = (props: any) => {
         handleOnLeftIconPress={props.handleDrawerPress}
         headerStyle={styles.headerStyle}
         RightFirstIconStyle={styles.RightFirstIconStyle}
-        // handleOnRightFirstIconPress={() => setFilterisVisible(true)}
       />
       <View style={styles.followupItemView}>
         <FlatList
           data={DATA}
           showsVerticalScrollIndicator={false}
-          renderItem={({ item }) => <FollowUpItem items={item} onPressView={onPressView} onPressEdit={onPressEdit} />}
+          renderItem={({ item }) => <FollowUpItem items={item} onPressView={onPressView} onPressEdit={onPressEdit} onPressAllFollowUp={onPressAllFollowUp} />}
         />
       </View>
     </View>

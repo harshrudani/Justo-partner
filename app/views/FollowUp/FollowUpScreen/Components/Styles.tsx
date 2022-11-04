@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import { normalize, normalizeHeight, normalizeSpacing, normalizeWidth } from "../../../../components/scaleFontSize";
-import { BLACK_COLOR, FONT_FAMILY_EXTRABOLD, FONT_FAMILY_SEMIBOLD, GRAY_COLOR, GRAY_LIGHT_COLOR, PRIMARY_THEME_COLOR, WHITE_COLOR } from "../../../../components/utilities/constant";
+import { BLACK_COLOR, FONT_FAMILY_EXTRABOLD, FONT_FAMILY_SEMIBOLD, GRAY_COLOR, GRAY_LIGHT_COLOR, Isios, PRIMARY_THEME_COLOR, WHITE_COLOR } from "../../../../components/utilities/constant";
 
 const styles = StyleSheet.create({
   headerStyle: {
@@ -79,6 +79,17 @@ const styles = StyleSheet.create({
   buttonTxt : {
     color: BLACK_COLOR,
     textAlign: 'center'
+  },
+  editInputView: {
+    marginHorizontal: normalizeSpacing(10)
+  },
+  inputWarp: {
+    marginTop: normalizeSpacing(20)
+  },
+  editBtnContainer: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    marginBottom: normalizeSpacing(20)
   }
 })
 

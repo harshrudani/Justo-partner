@@ -31,6 +31,9 @@ import FollowUpScreen from '../views/FollowUp/FollowUpScreen';
 
 import AddnewAgent from '../views/AgentManagement/AddAgent';
 import AgentBankInfo from '../views/AgentManagement/AddAgent/components/AgentBankInfo';
+import FollowUpDetails from '../views/FollowUp/FollowUpDetails';
+import EditFollowUp from '../views/FollowUp/FollowUpScreen/Components/EditFollowUp';
+import AllFollowUpScreen from '../views/FollowUp/AllFollowUp';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -95,6 +98,10 @@ const Route = () => {
         <Stack.Screen name="BulkUpload" component={BulkUpload}  />
         <Stack.Screen name="AddNewVisitorScreen" component={AddNewVisitorScreen}  />
         <Stack.Screen name="LeadDetails" component={LeadDetails}  />
+        {/* Follow up Screens */}
+        <Stack.Screen name="FollowUpDetails" component={FollowUpDetails}  />
+        <Stack.Screen name="EditFollowUp" component={EditFollowUp}  />
+        <Stack.Screen name="AllFollowUpScreen" component={AllFollowUpScreen}  />
       </Stack.Navigator>
     </NavigationContainer>
   );
