@@ -34,6 +34,8 @@ import AgentBankInfo from '../views/AgentManagement/AddAgent/components/AgentBan
 import FollowUpDetails from '../views/FollowUp/FollowUpDetails';
 import EditFollowUp from '../views/FollowUp/FollowUpScreen/Components/EditFollowUp';
 import AllFollowUpScreen from '../views/FollowUp/AllFollowUp';
+import AppointmentScreen from '../views/Appointment/AppointmentScreen';
+import AppointmentDetails from '../views/Appointment/AppointmentDetails';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -50,6 +52,7 @@ const DrawerComponent = () => {
       <Drawer.Screen name="AgentListing" component={AgentListingScreen}  />
       <Drawer.Screen name="LeadManagement" component={LeadManagementScreen}  />
       <Drawer.Screen name="FollowUpScreen" component={FollowUpScreen}  />
+      <Drawer.Screen name="AppointmentScreen" component={AppointmentScreen}  />
       
       {/* <Stack.Screen component={PropertyScreen} name="PropertyScreenView" /> */}
     </Drawer.Navigator>
@@ -102,6 +105,8 @@ const Route = () => {
         <Stack.Screen name="FollowUpDetails" component={FollowUpDetails}  />
         <Stack.Screen name="EditFollowUp" component={EditFollowUp}  />
         <Stack.Screen name="AllFollowUpScreen" component={AllFollowUpScreen}  />
+        {/* Appointment */}
+        <Stack.Screen name="AppointmentDetails" component={AppointmentDetails}  />
       </Stack.Navigator>
     </NavigationContainer>
   );

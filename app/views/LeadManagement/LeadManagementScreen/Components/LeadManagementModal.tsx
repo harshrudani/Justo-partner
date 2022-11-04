@@ -1,18 +1,18 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import Modal from "react-native-modal";
-import styles from "./styles";
-import images from "../../assets/images";
-import strings from "../utilities/Localization";
-import Button from "../Button";
-import InputField from "../InputField";
+import styles from "../../../../components/Modals/styles";
+import images from "../../../../assets/images";
+import strings from "../../../../components/utilities/Localization";
+import Button from "../../../../components/Button";
+import InputField from "../../../../components/InputField";
 const FilterModal = (props: any) => {
   return (
     <View>
       <Modal isVisible={props.Visible}>
         <View style={styles.mainContainer}>
           <View style={styles.topContainer}>
-            <Text style={styles.topTxt}>{strings.searchProperty}</Text>
+            <Text style={styles.topTxt}>{strings.searchvisitor}</Text>
             <View>
               <TouchableOpacity onPress={() => props.setIsVisible(false)}>
                 <Image source={images.close} style={styles.closeIcon} />
@@ -51,14 +51,14 @@ const FilterModal = (props: any) => {
             </View>
             <View style={styles.inputWrap}>
               <InputField
-                placeholderText={"Start Type"}
+                placeholderText={"Status"}
                 handleInputBtnPress={() => {}}
                 onChangeText={() => {}}
               />
             </View>
           </View>
           <View style={{marginVertical: 20}}>
-          <Button buttonText={strings.apply} handleBtnPress={() => props.setIsVisible(false)} />
+          <Button  handleBtnPress={() => props.setIsVisible(false)} buttonText={strings.apply}  />
           </View>
         </View>
       </Modal>

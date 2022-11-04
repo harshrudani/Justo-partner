@@ -93,7 +93,7 @@ const ConfirmModal = (props: any) => {
             />
           </View>
           <View style={{marginVertical: 10}}> 
-            <Button buttonText={strings.Confirm} />
+            <Button buttonText={strings.Confirm} handleBtnPress={() => props.setIsVisible(false)} />
           </View>
           </>
 

@@ -70,6 +70,7 @@ const strings = new LocalizedStrings({
     addnewvisitor: 'Add New Visitor',
     editVisitor: 'Update Visitor',
     visitordetails: 'Visitor Details',
+    searchvisitor: 'Search Visitor',
     propertyrequire: 'Property Require',
     createVisitor: 'Create Visitor',
     createandschedule: 'Create & schedule',
@@ -79,6 +80,8 @@ const strings = new LocalizedStrings({
     Statusupdate: 'Status Update',
     ScheduleSitevisite: 'Schedule Site Visite',
     followupHeader: 'Follow-up',
+    followupDetails: 'Follow-Up Detail',
+    searchfollowup: 'Search Follow-Up',
     allfollowup: 'All Followup',
     editfollowup: 'Edit Follow-Up',
     no: 'No', 
@@ -88,7 +91,13 @@ const strings = new LocalizedStrings({
     searchAgent: 'Search Agent',
     updatepassword: 'Update Password',
     deactivconfirmation: 'Are You sure you want to Deactive this',
-    update: 'Update'
+    update: 'Update',
+    call: 'Call',
+    // Appointment
+    appointmnet: 'Appointmnet',
+    appointmnetdetail: 'Appointmnet Detail',
+    updatestatus: 'Update Status',
+    searchappointment: 'Search Appointment'
   },
 });
 

@@ -33,7 +33,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Property Name :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Property Name</Text>
+                    <Text style={styles.nameTxt}>ABC</Text>
                 </View>
             </View>
             <View style={styles.Txtview}>
@@ -41,7 +41,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Last Interacted :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Last Interacted</Text>
+                    <Text style={styles.nameTxt}>21/09/2022</Text>
                 </View>
             </View>
             <View style={styles.Txtview}>
@@ -49,7 +49,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Source :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Source</Text>
+                    <Text style={styles.nameTxt}>ABC</Text>
                 </View>
             </View>
             <View style={styles.Txtview}>
@@ -57,7 +57,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Status :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>status</Text>
+                    <Text style={styles.nameTxt}>Last call status</Text>
                 </View>
             </View>
             {/* Property Required */}
@@ -70,7 +70,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Configuration :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Configuration</Text>
+                    <Text style={styles.nameTxt}>2 BHK</Text>
                 </View>
             </View>
             <View style={styles.Txtview}>
@@ -78,7 +78,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Area (in sq.ft) :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Area</Text>
+                    <Text style={styles.nameTxt}>600</Text>
                 </View>
             </View>
             <View style={styles.Txtview}>
@@ -86,7 +86,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Budget :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Budget</Text>
+                    <Text style={styles.nameTxt}>50L</Text>
                 </View>
             </View>
             <View style={styles.Txtview}>
@@ -94,7 +94,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Nature Of Funding :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Nature Of Funding</Text>
+                    <Text style={styles.nameTxt}>Loan</Text>
                 </View>
             </View>
             <View style={styles.Txtview}>
@@ -102,7 +102,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Purpose :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Purpose</Text>
+                    <Text style={styles.nameTxt}>End Use</Text>
                 </View>
             </View>
             </>
@@ -116,7 +116,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Visitor Name :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Visitor Name</Text>
+                    <Text style={styles.nameTxt}>ABC</Text>
                 </View>
             </View>
             <View style={styles.Txtview}>
@@ -124,7 +124,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Location :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Location</Text>
+                    <Text style={styles.nameTxt}>Indore</Text>
                 </View>
             </View>
             <View style={styles.Txtview}>
@@ -132,7 +132,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Age :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Age</Text>
+                    <Text style={styles.nameTxt}>21</Text>
                 </View>
             </View>
             <View style={styles.Txtview}>
@@ -140,7 +140,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Gender :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Gender</Text>
+                    <Text style={styles.nameTxt}>Male</Text>
                 </View>
             </View>
             <View style={styles.Txtview}>
@@ -148,7 +148,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Locality :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Locality</Text>
+                    <Text style={styles.nameTxt}>Pune</Text>
                 </View>
             </View>
             </>
@@ -162,7 +162,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Nature of Occupation :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Nature of Occupation</Text>
+                    <Text style={styles.nameTxt}>Salaried</Text>
                 </View>
             </View>
             <View style={styles.Txtview}>
@@ -170,15 +170,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Company Name :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Company Name</Text>
-                </View>
-            </View>
-            <View style={styles.Txtview}>
-                <View style={styles.projectContainer}>
-                    <Text style={styles.projectTxt}>Age :</Text>
-                </View>
-                <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Age</Text>
+                    <Text style={styles.nameTxt}>ABC</Text>
                 </View>
             </View>
             <View style={styles.Txtview}>
@@ -186,7 +178,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Designation :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Designation</Text>
+                    <Text style={styles.nameTxt}>Project Manager</Text>
                 </View>
             </View>
             <View style={styles.Txtview}>
@@ -194,7 +186,7 @@ const LeadDetailsIteam = () => {
                     <Text style={styles.projectTxt}>Office Address :</Text>
                 </View>
                 <View style={styles.nameContainer}>
-                    <Text style={styles.nameTxt}>Office Address</Text>
+                    <Text style={styles.nameTxt}>XYZ</Text>
                 </View>
             </View>
             </>

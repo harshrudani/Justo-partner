@@ -21,9 +21,9 @@ const FollowUpDetailsView = (props: any) => {
       />
       <StatusBar barStyle={"light-content"} />
       <Header
-        leftImageSrc={images.menu}
+        leftImageSrc={images.backArrow}
         rightSecondImageScr={images.notification}
-        headerText={strings.followupHeader}
+        headerText={strings.followupDetails}
         leftImageIconStyle={styles.RightFirstIconStyle}
         handleOnLeftIconPress={props.handleBackPress}
         headerStyle={styles.headerStyle}

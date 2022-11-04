@@ -31,7 +31,7 @@ const UserBankInfo = ({navigation}: any) => {
           height: insets.top,
         }}
       />
-      <StatusBar barStyle={"dark-content"} />
+      <StatusBar barStyle={"dark-content"} backgroundColor={WHITE_COLOR} />
       <Header
         headerText={strings.userbankinfo}
         headerStyle={styles.headerStyle}

@@ -13,39 +13,25 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   propertyListView: {
-    // flex: 1,
-    marginTop: normalizeSpacing(2),
-  },
-  leadDetailsItemView: {
     flex: 1,
-    marginVertical: normalizeSpacing(10),
   },
-  topDetailsView: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+  IteamView: {
+    backgroundColor: WHITE_COLOR,
     marginHorizontal: normalizeSpacing(10),
-    marginBottom: normalizeSpacing(10)
-  },
-  topTxtView: {
-    flexDirection: 'row',
-    alignItems: 'center'
-  },
-  topTxt: {
-    color: BLACK_COLOR,
-    fontFamily: FONT_FAMILY_EXTRABOLD
+    borderRadius: 10,
+    marginVertical: normalizeSpacing(10),
   },
   Txtview: {
     flexDirection: 'row',
-    // justifyContent: 'center',
     alignItems: 'center',
     borderBottomColor: GRAY_COLOR,
     borderBottomWidth: 1,
-    paddingVertical: normalizeSpacing(10),
+    padding: normalizeSpacing(4),
+    marginTop: normalizeSpacing(2),
   },
   projectContainer: {
     flex: 2.5,
     alignItems: 'flex-end',
-    height: '100%'
   },
   projectTxt: {
     fontSize: normalize(15),
@@ -62,21 +48,49 @@ const styles = StyleSheet.create({
     color: BLACK_COLOR,
     marginHorizontal: normalizeSpacing(10)
   },
-  headdingView: {
-    marginVertical: normalizeSpacing(10),
-    alignItems: 'center'
-  },
-  headdingTxt: {
-    fontSize: normalize(18),
-    color: BLACK_COLOR,
-    fontFamily: FONT_FAMILY_SEMIBOLD
-  },
-  btnContainer: {
+  buttonContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginHorizontal: normalizeSpacing(10),
-    marginVertical: normalizeSpacing(5)
+    marginVertical: normalizeSpacing(10),
+  },
+  button: {
+    top: 10,
+    backgroundColor: WHITE_COLOR,
+    width: normalizeWidth(100),
+    height: normalizeHeight(25),
+    marginLeft: normalizeSpacing(10),
+    justifyContent: 'center',
+    borderWidth: 0.5,
+    borderRadius: 10
+  },
+  Viewbutton: {
+    top: 10,
+    backgroundColor: PRIMARY_THEME_COLOR,
+    borderBottomEndRadius: 10,
+    borderTopLeftRadius: 10,
+    padding: normalizeSpacing(5)
+  },
+  arrow: {
+    tintColor: WHITE_COLOR,
+    width: normalizeWidth(30),
+    height: normalizeHeight(30)
+  },
+  buttonTxt: {
+    color: BLACK_COLOR,
+    textAlign: 'center'
+  },
+  editInputView: {
+    marginHorizontal: normalizeSpacing(10)
+  },
+  inputWarp: {
+    marginTop: normalizeSpacing(20)
+  },
+  editBtnContainer: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    marginBottom: normalizeSpacing(20)
   }
 })
+
 
 export default styles
