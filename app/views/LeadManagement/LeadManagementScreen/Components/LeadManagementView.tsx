@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import styles from "./Styles";
 import images from "../../../../assets/images";
 import ConfirmModal from "../../../../components/Modals/ConfirmModal";
-import FilterModal from "../../../../components/Modals/FilterModal";
 import { PRIMARY_THEME_COLOR_DARK } from "../../../../components/utilities/constant";
 import strings from "../../../../components/utilities/Localization";
 import PropertyListItem from "../../../PropertyMangement/PropertyScreen/components/PropertyListItem";
@@ -12,6 +11,7 @@ import Header from "../../../../components/Header";
 import Button from "../../../../components/Button";
 import LeadManagementItem from "./LeadManagementItem";
 import { useNavigation } from "@react-navigation/native";
+import FilterModal from "./LeadManagementModal";
 const DATA: any = [
   {
     Projectname: 'ABC',

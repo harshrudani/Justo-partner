@@ -26,7 +26,7 @@ const CompanyDetails = ({navigation}: any) => {
         }}
       />
 
-      <StatusBar barStyle={"dark-content"} />
+      <StatusBar barStyle={"dark-content"} backgroundColor={WHITE_COLOR} />
       <Header
         headerText={strings.companyDetails}
         headerStyle={styles.headerStyle}

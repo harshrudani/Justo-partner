@@ -1,6 +1,6 @@
 import { Dimensions, StyleSheet } from "react-native";
 import { normalize, normalizeHeight, normalizeSpacing } from "../../../../components/scaleFontSize";
-import { BLACK_COLOR, FONT_FAMILY_SEMIBOLD, PRIMARY_THEME_COLOR, WHITE_COLOR } from "../../../../components/utilities/constant";
+import { BLACK_COLOR, FONT_FAMILY_SEMIBOLD, GRAY_LIGHT_COLOR, PRIMARY_THEME_COLOR, WHITE_COLOR } from "../../../../components/utilities/constant";
 const {width, height} = Dimensions.get('window');
 
 const styles = StyleSheet.create({
@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
     fontSize: normalize(14),
     lineHeight: normalizeHeight(25),
     fontFamily: FONT_FAMILY_SEMIBOLD,
+    color: GRAY_LIGHT_COLOR
   },
   spanTouch: {
     // backgroundColor: 'red',

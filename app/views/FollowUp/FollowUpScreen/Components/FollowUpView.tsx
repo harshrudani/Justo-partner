@@ -1,5 +1,5 @@
 import { View, Text, StatusBar, FlatList } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Styles'
 import { PRIMARY_THEME_COLOR_DARK } from '../../../../components/utilities/constant'
 import Header from '../../../../components/Header'
@@ -8,6 +8,7 @@ import strings from '../../../../components/utilities/Localization'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import FollowUpItem from './FollowUpItem'
 import { useNavigation } from '@react-navigation/native'
+import FilterModal from './FollowUpModal'
 
 const DATA: any = [
   {
@@ -51,6 +52,7 @@ const DATA: any = [
 const FollowUpView = (props: any) => {
   const insets = useSafeAreaInsets();
   const navigation: any = useNavigation()
+  const [FilterisVisible, setFilterisVisible] = useState(false)
   const onPressView = () => {
     navigation.navigate('FollowUpDetails')
   }
@@ -77,6 +79,7 @@ const FollowUpView = (props: any) => {
         handleOnLeftIconPress={props.handleDrawerPress}
         headerStyle={styles.headerStyle}
         RightFirstIconStyle={styles.RightFirstIconStyle}
+        handleOnRightFirstIconPress={() => setFilterisVisible(true)}
       />
       <View style={styles.followupItemView}>
         <FlatList
@@ -85,6 +88,7 @@ const FollowUpView = (props: any) => {
           renderItem={({ item }) => <FollowUpItem items={item} onPressView={onPressView} onPressEdit={onPressEdit} onPressAllFollowUp={onPressAllFollowUp} />}
         />
       </View>
+      <FilterModal Visible={FilterisVisible} setIsVisible={setFilterisVisible} />
     </View>
   )
 }

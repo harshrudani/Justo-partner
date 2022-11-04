@@ -2,42 +2,41 @@ import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import styles from './Styles'
 import images from '../../../../assets/images'
-import { BLACK_COLOR, YELLOW_COLOR } from '../../../../components/utilities/constant'
 import strings from '../../../../components/utilities/Localization'
 
-const FollowUpItem = (props: any) => {
+const SmAppointment = (props: any) => {
   return (
     <View style={styles.IteamView}>
     <View style={styles.Txtview}>
       <View style={styles.projectContainer}>
-        <Text style={styles.projectTxt}>Site Visit Date Time :</Text>
+        <Text style={styles.projectTxt}>Date :</Text>
       </View>
       <View style={styles.nameContainer}>
-        <Text style={styles.nameTxt}>{props.items.Projectname}</Text>
+        <Text style={styles.nameTxt}>{props.items.date}</Text>
       </View>
     </View>
     <View style={styles.Txtview}>
       <View style={styles.projectContainer}>
-        <Text style={styles.projectTxt}>Customer Name :</Text>
+        <Text style={styles.projectTxt}>Appointment Type :</Text>
       </View>
       <View style={styles.nameContainer}>
-        <Text style={styles.nameTxt}>{props.items.Location}</Text>
+        <Text style={styles.nameTxt}>{props.items.appointmentType}</Text>
       </View>
     </View>
     <View style={styles.Txtview}>
       <View style={styles.projectContainer}>
-        <Text style={styles.projectTxt}>Lead No. :</Text>
+        <Text style={styles.projectTxt}>Time :</Text>
       </View>
       <View style={styles.nameContainer}>
-        <Text style={styles.nameTxt}>{props.items.visitor}</Text>
+        <Text style={styles.nameTxt}>{props.items.time}</Text>
       </View>
     </View>
     <View style={styles.Txtview}>
       <View style={styles.projectContainer}>
-        <Text style={styles.projectTxt}>Pickup :</Text>
+        <Text style={styles.projectTxt}>Appointment With :</Text>
       </View>
       <View style={styles.nameContainer}>
-        <Text style={styles.nameTxt}>{props.items.siteVisit}</Text>
+        <Text style={styles.nameTxt}>{props.items.appointmentWith}</Text>
       </View>
     </View>
     <View style={styles.Txtview}>
@@ -45,29 +44,21 @@ const FollowUpItem = (props: any) => {
         <Text style={styles.projectTxt}>Status :</Text>
       </View>
       <View style={styles.nameContainer}>
-        <Text style={styles.nameTxt}>{props.items.closeVisit}</Text>
-      </View>
-    </View>
-    <View style={styles.Txtview}>
-      <View style={styles.projectContainer}>
-        <Text style={styles.projectTxt}>Visiting Score :</Text>
-      </View>
-      <View style={styles.nameContainer}>
-        <Text style={styles.nameTxt}>{props.items.closeVisit}</Text>
+        <Text style={styles.nameTxt}>{props.items.Status}</Text>
       </View>
     </View>
     <View style={styles.buttonContainer}>
       <TouchableOpacity
         style={styles.button}
-        onPress={() => props.onPressEdit()}
+        // onPress={() => props.onPressEdit()}
       >
         <Text style={styles.buttonTxt}>Edit</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.button}
-        onPress={() => props.onPressAllFollowUp()}
+        // onPress={() => props.onPressAllFollowUp()}
          >
-        <Text style={styles.buttonTxt}>{strings.allfollowup}</Text>
+        <Text style={styles.buttonTxt}>{strings.call}</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.Viewbutton} onPress={() => props.onPressView(props.items)}>
         <Image
@@ -80,4 +71,4 @@ const FollowUpItem = (props: any) => {
   )
 }
 
-export default FollowUpItem
+export default SmAppointment

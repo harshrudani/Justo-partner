@@ -10,6 +10,7 @@ import {
   FONT_FAMILY_EXTRABOLD,
   FONT_FAMILY_SEMIBOLD,
   GRAY_COLOR,
+  GRAY_LIGHT_COLOR,
   WHITE_COLOR,
 } from "../utilities/constant";
 
@@ -83,12 +84,15 @@ const styles = StyleSheet.create({
   textItem: {
     flex: 1,
     fontSize: 16,
+    color: GRAY_LIGHT_COLOR
   },
   placeholderStyle: {
     fontSize: 16,
+    color: GRAY_LIGHT_COLOR
   },
   selectedTextStyle: {
     fontSize: 16,
+    color: GRAY_LIGHT_COLOR
   },
   iconStyle: {
     width: 20,

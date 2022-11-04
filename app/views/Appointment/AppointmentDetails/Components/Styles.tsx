@@ -13,18 +13,14 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   propertyListView: {
-    // flex: 1,
-    marginTop: normalizeSpacing(2),
-  },
-  leadDetailsItemView: {
     flex: 1,
-    marginVertical: normalizeSpacing(10),
   },
   topDetailsView: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginHorizontal: normalizeSpacing(10),
-    marginBottom: normalizeSpacing(10)
+    marginBottom: normalizeSpacing(10),
+    alignItems: 'center'
   },
   topTxtView: {
     flexDirection: 'row',
@@ -33,6 +29,14 @@ const styles = StyleSheet.create({
   topTxt: {
     color: BLACK_COLOR,
     fontFamily: FONT_FAMILY_EXTRABOLD
+  },
+  qrView: {
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  qrImg: {
+    width: normalizeWidth(80),
+    height: normalizeHeight(80)
   },
   Txtview: {
     flexDirection: 'row',
@@ -62,20 +66,8 @@ const styles = StyleSheet.create({
     color: BLACK_COLOR,
     marginHorizontal: normalizeSpacing(10)
   },
-  headdingView: {
-    marginVertical: normalizeSpacing(10),
-    alignItems: 'center'
-  },
-  headdingTxt: {
-    fontSize: normalize(18),
-    color: BLACK_COLOR,
-    fontFamily: FONT_FAMILY_SEMIBOLD
-  },
-  btnContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginHorizontal: normalizeSpacing(10),
-    marginVertical: normalizeSpacing(5)
+  bntView: {
+    marginVertical: normalizeSpacing(10)
   }
 })
 

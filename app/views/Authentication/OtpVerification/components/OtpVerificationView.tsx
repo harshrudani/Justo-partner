@@ -4,6 +4,7 @@ import {
   Image,
   TouchableOpacity,
   ScrollView,
+  StatusBar,
 } from "react-native";
 import OTPInputView from "@twotalltotems/react-native-otp-input";
 import React from "react";
@@ -11,6 +12,7 @@ import styles from "./style";
 import images from "../../../../assets/images";
 import strings from "../../../../components/utilities/Localization";
 import Button from "../../../../components/Button";
+import { PRIMARY_THEME_COLOR, WHITE_COLOR } from "../../../../components/utilities/constant";
 
 const OtpVerificationView = (props: any) => {
   const { otp, setOtp, handleOtpChange } = props;
@@ -18,6 +20,7 @@ const OtpVerificationView = (props: any) => {
     <ScrollView
       style={styles.mainContainer}
     >
+      <StatusBar barStyle={"light-content"} backgroundColor={PRIMARY_THEME_COLOR} />
       <View style={styles.logoView}>
         <Image
           style={styles.loginBanner}

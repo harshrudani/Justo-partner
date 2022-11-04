@@ -119,6 +119,9 @@ const customDrawer = ({navigation}: any) => {
         <DrawerTabSection
           iconSource={images.event}
           tabTitle={strings.appointmentForVisitHeader}
+          handleDrawerNavigation={() => {
+            navigation.navigate('AppointmentScreen');
+          }}
         />
         <DrawerTabSection
           iconSource={images.report}
