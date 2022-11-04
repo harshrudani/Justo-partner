@@ -64,7 +64,9 @@ const FollowUpItem = (props: any) => {
         <Text style={styles.buttonTxt}>Edit</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        style={styles.button} >
+        style={styles.button}
+        onPress={() => props.onPressAllFollowUp()}
+         >
         <Text style={styles.buttonTxt}>{strings.allfollowup}</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.Viewbutton} onPress={() => props.onPressView(props.items)}>
