@@ -24,23 +24,25 @@ const AgentBankInfo = ({navigation}: any) => {
     navigation.navigate('AgentListing')
   }
   return (
-    <ScrollView style={styles.mainContainer}>
-      <View
+    <View style={styles.mainContainer}>
+      {/* <View
         style={{
           backgroundColor: WHITE_COLOR,
           height: insets.top,
+          flex:1
         }}
-      />
+      /> */}
+      
       <StatusBar barStyle={"light-content"} />
       <Header
-        headerText={strings.userbankinfo}
+        headerText={strings.rerainfo}
         headerStyle={styles.headerStyle}
         headerTextStyle={styles.headerTextStyle}
         leftImageSrc={images.backArrow}
         handleOnLeftIconPress={onPressBack}
-      />
-      <View style={styles.wrap}>
-       
+      /> 
+     
+        <View style={styles.wraptop}>
         <View style={styles.inputWrap}>
           <InputField
             placeholderText={"RERA Certificat No."}
@@ -93,7 +95,9 @@ const AgentBankInfo = ({navigation}: any) => {
             <Text>browse</Text>
           </TouchableOpacity>
         </View>
-        <View style={styles.inputWrap}>
+      </View>
+        <View style={styles.wrapbottum}>
+       {/*  <View style={styles.inputWrap}>
           <Text style={styles.headingText}>Bank details</Text>
         </View>
         <View style={styles.inputWrap}>
@@ -157,8 +161,17 @@ const AgentBankInfo = ({navigation}: any) => {
             textTransform={"uppercase"}
           />
         </View>
-      </View>
-    </ScrollView>
+       */}
+        <View style={{marginTop: 20}}>
+          <Button
+            handleBtnPress={()=>onPressCreateAgent()}
+            buttonText={strings.createAgent}
+            textTransform={"uppercase"}
+          />
+        </View>
+        </View>
+      
+    </View>
   );
 };
 

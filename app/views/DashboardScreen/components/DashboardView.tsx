@@ -146,7 +146,7 @@ const DashboardView = (props: any) => {
                 <Text style={styles.cardText}>Visit Target</Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.numberText}>1000/250</Text>
+                <Text style={styles.numberText}>250/1000</Text>
               </View>
             </View>
             <View style={styles.secondCardView}>
@@ -154,7 +154,7 @@ const DashboardView = (props: any) => {
                 <Text style={styles.cardText}>Site Visit Target</Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.numberText}>1000/250</Text>
+                <Text style={styles.numberText}>250/1000</Text>
               </View>
             </View>
             <View style={styles.thirdCardView}>
@@ -162,7 +162,7 @@ const DashboardView = (props: any) => {
                 <Text style={styles.cardText}>Closing Target</Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.numberText}>1000/250</Text>
+                <Text style={styles.numberText}>250/1000</Text>
               </View>
             </View>
           </View>
@@ -174,7 +174,7 @@ const DashboardView = (props: any) => {
                 </Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.thirdPortionNumberText}>1000/250</Text>
+                <Text style={styles.thirdPortionNumberText}>250/1000</Text>
               </View>
             </View>
             <View style={styles.thirdPortioncardView}>
@@ -184,7 +184,7 @@ const DashboardView = (props: any) => {
                 </Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.thirdPortionNumberText}>1000/250</Text>
+                <Text style={styles.thirdPortionNumberText}>250/1000</Text>
               </View>
             </View>
             <View style={styles.thirdPortioncardView}>
@@ -192,7 +192,7 @@ const DashboardView = (props: any) => {
                 <Text style={styles.thirdPortionCardText}>Today Visit</Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.thirdPortionNumberText}>1000/250</Text>
+                <Text style={styles.thirdPortionNumberText}>250/1000</Text>
               </View>
             </View>
             <View style={styles.thirdPortioncardView}>
@@ -200,7 +200,7 @@ const DashboardView = (props: any) => {
                 <Text style={styles.thirdPortionCardText}>Active CP</Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.thirdPortionNumberText}>1000/250</Text>
+                <Text style={styles.thirdPortionNumberText}>250/1000</Text>
               </View>
             </View>
             <View style={styles.thirdPortioncardView}>
@@ -208,7 +208,7 @@ const DashboardView = (props: any) => {
                 <Text style={styles.thirdPortionCardText}>Closing Target</Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.thirdPortionNumberText}>1000/250</Text>
+                <Text style={styles.thirdPortionNumberText}>250/1000</Text>
               </View>
             </View>
           </View>

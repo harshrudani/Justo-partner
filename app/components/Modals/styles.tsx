@@ -45,7 +45,9 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   MiddleContainer: {
-    marginVertical: normalizeSpacing(10),
+    marginVertical: normalizeSpacing(25),
+    marginHorizontal: normalizeSpacing(30),
+   
   },
   closeIcon: {
     tintColor: "red",

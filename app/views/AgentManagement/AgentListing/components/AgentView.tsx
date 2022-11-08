@@ -134,6 +134,7 @@ const AgentView = (props: any) => {
         stringshow = {strings.confirmation}
         textshow = {strings.deactivconfirmation+' '+strings.agencyHeader+'?'}
         confirmtype = {'CONFIRMATION'}
+        
       />
       <FilterModal Visible={FilterisVisible} setIsVisible={setFilterisVisible} />
     </View>
