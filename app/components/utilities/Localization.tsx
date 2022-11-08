@@ -12,6 +12,7 @@ const strings = new LocalizedStrings({
     propertyHeader: 'Property',
     propertyManagementHeader: 'Property Management',
     agencyHeader: 'Agent',
+    agencyHeaderpending: 'Pending Agent',
     leadManagementHeader: 'Lead Management',
     appointmentWithCPHeader: 'Appointment With CP',
     appointmentForVisitHeader: 'Appointment For Site Visit',
@@ -107,7 +108,7 @@ const strings = new LocalizedStrings({
     noofguest: 'No. of Guest',
     pickupAppointment: 'PickUp(if add property time set yes)',
 
-    rerainfo: 'RARA Information'
+    rerainfo: 'RERA Information'
   },
 });
 

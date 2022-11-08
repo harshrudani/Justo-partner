@@ -94,6 +94,7 @@ const AppointmentView = (props: any) => {
                     renderScene={renderScene}
                     onIndexChange={setIndex}
                     initialLayout={{ width: layout.width }}
+                    
                 />
             </View>
             <FilterModal Visible={FilterisVisible} setIsVisible={setFilterisVisible} />
