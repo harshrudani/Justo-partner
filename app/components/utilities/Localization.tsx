@@ -98,6 +98,14 @@ const strings = new LocalizedStrings({
     appointmnetdetail: 'Appointmnet Detail',
     updatestatus: 'Update Status',
     searchappointment: 'Search Appointment',
+    addNewappointment: 'Add New Appointment',
+    selectLead: 'Select Lead',
+    selectproperty: 'Select Property',
+    appointmentDate: 'Appointment Date',
+    appointmentTime: 'Appointment Time',
+    location: 'Location',
+    noofguest: 'No. of Guest',
+    pickupAppointment: 'PickUp(if add property time set yes)',
 
     rerainfo: 'RARA Information'
   },
