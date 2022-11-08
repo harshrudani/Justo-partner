@@ -105,7 +105,9 @@ const strings = new LocalizedStrings({
     appointmentTime: 'Appointment Time',
     location: 'Location',
     noofguest: 'No. of Guest',
-    pickupAppointment: 'PickUp(if add property time set yes)'
+    pickupAppointment: 'PickUp(if add property time set yes)',
+
+    rerainfo: 'RARA Information'
   },
 });
 

@@ -6,6 +6,7 @@ import images from "../../assets/images";
 import strings from "../utilities/Localization";
 import { Dropdown } from "react-native-element-dropdown";
 import Button from "../Button";
+import { PRIMARY_THEME_COLOR, BG_MAIN_COLOUR } from "../utilities/constant";
 const data = [
   { label: "Item 1", value: "1" },
   { label: "Item 2", value: "2" },
@@ -51,54 +52,62 @@ const ConfirmModal = (props: any) => {
                   <Text style={styles.bottomTxt}>{props.textshow}</Text>
                 </View>
 
-                <View style={{ marginVertical: 10, flexDirection: 'row' }}>
+                <View style={{ marginVertical: 10, marginHorizontal: 25, flexDirection: 'row' }}>
 
                   <View style={styles.btnview}>
-                    <Button buttonText={strings.no} width={120} height={40} handleBtnPress={() => props.setIsVisible(false)} />
+                    <Button buttonText={strings.no} width={120} height={40} handleBtnPress={() => props.setIsVisible(false)}
+                      bgcolor={BG_MAIN_COLOUR}
+                      btnTxtcolor={PRIMARY_THEME_COLOR} />
                   </View>
 
-                  <View style={styles.btnview}>
-                    <Button buttonText={strings.yes} width={120} height={40} handleBtnPress={() => props.setIsVisible(false)} />
+                  <View style={{ marginVertical: 10, flexDirection: 'row' }}>
+
+                    <View style={styles.btnview}>
+                      <Button buttonText={strings.no} width={120} height={40} handleBtnPress={() => props.setIsVisible(false)} />
+                    </View>
+
+                    <View style={styles.btnview}>
+                      <Button buttonText={strings.yes} width={120} height={40} handleBtnPress={() => props.setIsVisible(false)} />
+                    </View>
+
                   </View>
 
                 </View>
 
               </View>
+              </>
 
-
-            </>
-
-            :
-            <>
-              <View style={styles.borderView} />
-              <View style={styles.MiddleContainer}>
-                <Text style={styles.bottomTxt}>{strings.ConfirmationModalTxt}</Text>
-              </View>
-              <View>
-                <Dropdown
-                  style={styles.dropdown}
-                  placeholderStyle={styles.placeholderStyle}
-                  selectedTextStyle={styles.selectedTextStyle}
-                  iconStyle={styles.iconStyle}
-                  data={data}
-                  maxHeight={300}
-                  labelField="label"
-                  valueField="value"
-                  placeholder="Select Reasone"
-                  value={value}
-                  onChange={(item) => {
-                    setValue(item.value);
-                  }}
-                  renderItem={renderItem}
-                />
-              </View>
-              <View style={{ marginVertical: 10 }}>
-                <Button buttonText={strings.Confirm} handleBtnPress={() => props.setIsVisible(false)} />
-              </View>
-            </>
+              :
+              <>
+                <View style={styles.borderView} />
+                <View style={styles.MiddleContainer}>
+                  <Text style={styles.bottomTxt}>{strings.ConfirmationModalTxt}</Text>
+                </View>
+                <View>
+                  <Dropdown
+                    style={styles.dropdown}
+                    placeholderStyle={styles.placeholderStyle}
+                    selectedTextStyle={styles.selectedTextStyle}
+                    iconStyle={styles.iconStyle}
+                    data={data}
+                    maxHeight={300}
+                    labelField="label"
+                    valueField="value"
+                    placeholder="Select Reasone"
+                    value={value}
+                    onChange={(item) => {
+                      setValue(item.value);
+                    }}
+                    renderItem={renderItem}
+                  />
+                </View>
+                <View style={{ marginVertical: 10 }}>
+                  <Button buttonText={strings.Confirm} handleBtnPress={() => props.setIsVisible(false)} />
+                </View>
+              </>
 
           }
-        </View>
+            </View>
       </Modal>
     </View>
   );
