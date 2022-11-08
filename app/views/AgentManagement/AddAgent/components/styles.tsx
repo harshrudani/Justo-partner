@@ -25,6 +25,19 @@ const styles = StyleSheet.create({
     margin: normalizeSpacing(20),
     alignItems: 'center'
   },
+
+  wraptop: {
+    flex: 5.2,
+    margin: normalizeSpacing(20),
+    alignItems: 'center'
+  },
+
+  wrapbottum: {
+    flex: 0.8,
+    margin: normalizeSpacing(20),
+    alignItems: 'center'
+  },
+
   headingText: {
     fontSize: normalize(18),
     fontFamily: FONT_FAMILY_SEMIBOLD,

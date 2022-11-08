@@ -97,7 +97,9 @@ const strings = new LocalizedStrings({
     appointmnet: 'Appointmnet',
     appointmnetdetail: 'Appointmnet Detail',
     updatestatus: 'Update Status',
-    searchappointment: 'Search Appointment'
+    searchappointment: 'Search Appointment',
+
+    rerainfo: 'RARA Information'
   },
 });
 
