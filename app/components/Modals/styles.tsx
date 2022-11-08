@@ -10,6 +10,7 @@ import {
   FONT_FAMILY_EXTRABOLD,
   FONT_FAMILY_SEMIBOLD,
   GRAY_COLOR,
+  GRAY_LIGHT_COLOR,
   WHITE_COLOR,
 } from "../utilities/constant";
 
@@ -28,6 +29,10 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     marginHorizontal: normalizeSpacing(10),
   },
+  conteconfirm: {
+    flexDirection: "column",
+    
+  },
   topTxt: {
     color: BLACK_COLOR,
     fontSize: normalize(18),
@@ -40,12 +45,18 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   MiddleContainer: {
-    marginVertical: normalizeSpacing(10),
+    marginVertical: normalizeSpacing(25),
+    marginHorizontal: normalizeSpacing(30),
+   
   },
   closeIcon: {
     tintColor: "red",
-    width: normalizeWidth(30),
-    height: normalizeHeight(30),
+    width: normalizeWidth(25),
+    height: normalizeHeight(25),
+  },
+  btnview: {
+    width: '50%',
+    height: normalizeHeight(50),
   },
   dropdown: {
     margin: 16,
@@ -75,12 +86,15 @@ const styles = StyleSheet.create({
   textItem: {
     flex: 1,
     fontSize: 16,
+    color: GRAY_LIGHT_COLOR
   },
   placeholderStyle: {
     fontSize: 16,
+    color: GRAY_LIGHT_COLOR
   },
   selectedTextStyle: {
     fontSize: 16,
+    color: GRAY_LIGHT_COLOR
   },
   iconStyle: {
     width: 20,

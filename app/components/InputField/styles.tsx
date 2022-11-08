@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
     fontSize: normalize(18),
     paddingRight: normalizeSpacing(30),
     paddingLeft: normalizeSpacing(Isios ? 5 : 15),
-    width: '90%',
     fontFamily: FONT_FAMILY_SEMIBOLD,
     opacity: 0.6,
   },
@@ -43,7 +42,7 @@ const styles = StyleSheet.create({
   },
   inputHeadinView: {
     position: 'absolute',
-    top: normalizeSpacing(-15),
+    top: normalizeSpacing(-10),
     left: normalizeSpacing(20),
     zIndex: 1,
     // backgroundColor: 'transparent',

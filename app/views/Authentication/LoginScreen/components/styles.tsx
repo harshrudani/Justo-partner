@@ -7,6 +7,7 @@ import {
 } from '../../../../components/scaleFontSize';
 import {
   FONT_FAMILY_SEMIBOLD,
+  GRAY_LIGHT_COLOR,
   PRIMARY_THEME_COLOR,
 } from '../../../../components/utilities/constant';
 const {width, height} = Dimensions.get('window');
@@ -16,10 +17,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   logoView: {
-    flex: 3,
     alignItems: 'center',
     justifyContent: 'center',
-    zIndex: 10,
+    
   },
   loginBannerView: {
     height: '100%',
@@ -41,24 +41,17 @@ const styles = StyleSheet.create({
     bottom: '50%',
   },
   loginBanner: {
-    // width: '100%',
-    // height: '100%',
-    borderBottomLeftRadius: width,
-    borderBottomRightRadius: width,
-    // borderRadius: width,
-    width: width * 2,
-    height: width * 2,
-    marginLeft: -(width / 2),
-    position: 'absolute',
-    bottom: 0,
-    overflow: 'hidden',
+    width: width,
+        height: 220,
   },
   logoImage: {
     height: normalizeHeight(150),
     width: normalizeWidth(200),
   },
   inputView: {
-    flex: 3,
+    flex: 4,
+    justifyContent: 'flex-end',
+    marginTop:normalizeSpacing(15)
   },
   inputWrap: {
     marginVertical: normalizeSpacing(10),
@@ -93,6 +86,7 @@ const styles = StyleSheet.create({
   dontText: {
     fontSize: normalize(15),
     fontFamily: FONT_FAMILY_SEMIBOLD,
+    color: GRAY_LIGHT_COLOR
   },
   registerTouch: {
     paddingHorizontal: normalizeSpacing(3),
@@ -107,6 +101,7 @@ const styles = StyleSheet.create({
     fontSize: normalize(14),
     lineHeight: normalizeHeight(25),
     fontFamily: FONT_FAMILY_SEMIBOLD,
+    color: GRAY_LIGHT_COLOR
   },
   spanTouch: {
     // backgroundColor: 'red',
@@ -118,6 +113,9 @@ const styles = StyleSheet.create({
     color: PRIMARY_THEME_COLOR,
     fontFamily: FONT_FAMILY_SEMIBOLD,
   },
+  btnView: {
+    marginVertical: 20
+  }
 });
 
 export default styles;

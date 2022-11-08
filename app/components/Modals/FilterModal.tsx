@@ -9,7 +9,7 @@ import InputField from "../InputField";
 const FilterModal = (props: any) => {
   return (
     <View>
-      <Modal isVisible={true}>
+      <Modal isVisible={props.Visible}>
         <View style={styles.mainContainer}>
           <View style={styles.topContainer}>
             <Text style={styles.topTxt}>{strings.searchProperty}</Text>
@@ -57,7 +57,9 @@ const FilterModal = (props: any) => {
               />
             </View>
           </View>
-          <Button buttonText={strings.apply} />
+          <View style={{marginVertical: 20}}>
+          <Button buttonText={strings.apply} handleBtnPress={() => props.setIsVisible(false)} />
+          </View>
         </View>
       </Modal>
     </View>

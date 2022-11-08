@@ -7,6 +7,8 @@ import {
   GRAY_COLOR,
   PRIMARY_THEME_COLOR,
   WHITE_COLOR,
+  PRIMARY_THEME_COLOR_DARK,
+  GRAY_LIGHT_COLOR,
 } from '../../../../components/utilities/constant';
 
 const styles = StyleSheet.create({
@@ -21,7 +23,7 @@ const styles = StyleSheet.create({
   },
   propertyListView: {
     flex: 1,
-    margin: normalizeSpacing(10),
+    margin: normalizeSpacing(5),
   },
   IteamView: {
     backgroundColor: WHITE_COLOR,
@@ -38,15 +40,16 @@ const styles = StyleSheet.create({
     marginTop: normalizeSpacing(2),
   },
   projectContainer : {
-    flex: 2,
+    flex: 2.5,
     alignItems: 'flex-end',
   },
   projectTxt : {
     fontSize: normalize(15),
     fontFamily: FONT_FAMILY_SEMIBOLD,
+    color: GRAY_LIGHT_COLOR
   },
   nameContainer : {
-    flex: 4,
+    flex: 3.5,
     alignItems: 'flex-start',
   },
   nameTxt : {

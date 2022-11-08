@@ -98,18 +98,30 @@ const customDrawer = ({navigation}: any) => {
         <DrawerTabSection
           iconSource={images.agency}
           tabTitle={strings.agencyHeader}
+          handleDrawerNavigation={() => {
+            navigation.navigate('AgentListing');
+          }}
         />
         <DrawerTabSection
           iconSource={images.lead}
           tabTitle={strings.leadManagementHeader}
+          handleDrawerNavigation={() => {
+            navigation.navigate('LeadManagement');
+          }}
         />
         <DrawerTabSection
           iconSource={images.event}
-          tabTitle={strings.appointmentWithCPHeader}
+          tabTitle={strings.followupHeader}
+          handleDrawerNavigation={() => {
+            navigation.navigate('FollowUpScreen');
+          }}
         />
         <DrawerTabSection
           iconSource={images.event}
           tabTitle={strings.appointmentForVisitHeader}
+          handleDrawerNavigation={() => {
+            navigation.navigate('AppointmentScreen');
+          }}
         />
         <DrawerTabSection
           iconSource={images.report}
@@ -130,6 +142,9 @@ const customDrawer = ({navigation}: any) => {
         <DrawerTabSection
           iconSource={images.logout}
           tabTitle={strings.logout}
+          handleDrawerNavigation={() => {
+            navigation.navigate('LoginScreenView');
+          }}
         />
       </DrawerContentScrollView>
       <View style={styles.versionView}>

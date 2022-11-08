@@ -6,8 +6,8 @@ import {
   Image,
   FlatList,
   TouchableOpacity,
-  Switch,
 } from 'react-native';
+import { Switch } from 'react-native-switch';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import React, {useState} from 'react';
 import Header from '../../../components/Header';
@@ -78,7 +78,7 @@ const DashboardView = (props: any) => {
             height: insets.top,
           }}
         />
-        <StatusBar barStyle={'light-content'} />
+        <StatusBar backgroundColor={PRIMARY_THEME_COLOR} barStyle={'light-content'} />
         <Header
           leftImageSrc={images.menu}
           rightImageScr={images.notification}
@@ -92,13 +92,40 @@ const DashboardView = (props: any) => {
               <View style={styles.statusView}>
                 <Text style={styles.statusText}>Status</Text>
                 <View style={styles.switchView}>
-                  <Switch
+                 {/*  <Switch
                     thumbColor={PRIMARY_THEME_COLOR}
                     ios_backgroundColor={WHITE_COLOR}
                     onValueChange={handleSwitcPress}
                     value={isEnabled}
                     style={styles.switchStyle}
+                  /> */}
+
+                  <Switch
+                    value={isEnabled}
+                    onValueChange={(val) => handleSwitcPress()}
+                    //disabled={false}
+                    backgroundActive={'green'}
+                    backgroundInactive={'gray'}
+                    circleActiveColor={WHITE_COLOR}
+                    circleInActiveColor={WHITE_COLOR}
+                    circleSize={25}
+                    activeText={''}
+                    inActiveText={''}
+                   // barHeight={1}
+                    circleBorderWidth={2}
+                   /*  activeText={'On'}
+                    inActiveText={'Off'}
+                    circleSize={30}
+                    barHeight={1}
+                    circleBorderWidth={3}
+                    backgroundActive={'green'}
+                    backgroundInactive={'gray'}
+                    circleActiveColor={'#30a566'}
+                    circleInActiveColor={'#000000'} */
+                   
                   />
+
+
                 </View>
               </View>
               <View style={styles.welcomeView}>
@@ -119,7 +146,7 @@ const DashboardView = (props: any) => {
                 <Text style={styles.cardText}>Visit Target</Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.numberText}>1000/250</Text>
+                <Text style={styles.numberText}>250/1000</Text>
               </View>
             </View>
             <View style={styles.secondCardView}>
@@ -127,7 +154,7 @@ const DashboardView = (props: any) => {
                 <Text style={styles.cardText}>Site Visit Target</Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.numberText}>1000/250</Text>
+                <Text style={styles.numberText}>250/1000</Text>
               </View>
             </View>
             <View style={styles.thirdCardView}>
@@ -135,7 +162,7 @@ const DashboardView = (props: any) => {
                 <Text style={styles.cardText}>Closing Target</Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.numberText}>1000/250</Text>
+                <Text style={styles.numberText}>250/1000</Text>
               </View>
             </View>
           </View>
@@ -147,7 +174,7 @@ const DashboardView = (props: any) => {
                 </Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.thirdPortionNumberText}>1000/250</Text>
+                <Text style={styles.thirdPortionNumberText}>250/1000</Text>
               </View>
             </View>
             <View style={styles.thirdPortioncardView}>
@@ -157,7 +184,7 @@ const DashboardView = (props: any) => {
                 </Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.thirdPortionNumberText}>1000/250</Text>
+                <Text style={styles.thirdPortionNumberText}>250/1000</Text>
               </View>
             </View>
             <View style={styles.thirdPortioncardView}>
@@ -165,7 +192,7 @@ const DashboardView = (props: any) => {
                 <Text style={styles.thirdPortionCardText}>Today Visit</Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.thirdPortionNumberText}>1000/250</Text>
+                <Text style={styles.thirdPortionNumberText}>250/1000</Text>
               </View>
             </View>
             <View style={styles.thirdPortioncardView}>
@@ -173,7 +200,7 @@ const DashboardView = (props: any) => {
                 <Text style={styles.thirdPortionCardText}>Active CP</Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.thirdPortionNumberText}>1000/250</Text>
+                <Text style={styles.thirdPortionNumberText}>250/1000</Text>
               </View>
             </View>
             <View style={styles.thirdPortioncardView}>
@@ -181,7 +208,7 @@ const DashboardView = (props: any) => {
                 <Text style={styles.thirdPortionCardText}>Closing Target</Text>
               </View>
               <View style={styles.numberView}>
-                <Text style={styles.thirdPortionNumberText}>1000/250</Text>
+                <Text style={styles.thirdPortionNumberText}>250/1000</Text>
               </View>
             </View>
           </View>
