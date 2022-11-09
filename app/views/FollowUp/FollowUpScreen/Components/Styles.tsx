@@ -88,8 +88,8 @@ const styles = StyleSheet.create({
   },
   editBtnContainer: {
     flex: 1,
-    justifyContent: 'flex-end',
-    marginBottom: normalizeSpacing(20)
+    // justifyContent: 'flex-end',
+    marginTop: normalizeSpacing(20)
   }
 })
 

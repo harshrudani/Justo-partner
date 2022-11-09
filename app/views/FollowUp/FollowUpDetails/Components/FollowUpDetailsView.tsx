@@ -16,6 +16,9 @@ const FollowUpDetailsView = (props: any) => {
   const onpressSchedule = () => {
     navigation.navigate('AddAppointmentScreen')
   }
+  const onpressUpdate = () => {
+    navigation.navigate('UpdateFollowup')
+  }
   return (
     <View style={styles.mainContainer}>
       <View
@@ -55,6 +58,7 @@ const FollowUpDetailsView = (props: any) => {
           btnTxtcolor={WHITE_COLOR}
           btnTxtsize={14}
           textTransform={"uppercase"}
+          handleBtnPress={() => onpressUpdate()}
         />
       </View>
     </View>
